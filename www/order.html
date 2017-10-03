@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Desibites - SG </title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700' rel='stylesheet' type='text/css'>
+
+    <link href="css/lib/bootstrap.min.css" rel="stylesheet">
+    <link href="css/plugins/font-awesome.min.css" rel="stylesheet">
+    <link href="css/plugins/lineicons.css" rel="stylesheet">
+    <link href="vendors/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet">
+    <link href="vendors/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="vendors/owl-carousel/assets/owl.carousel.css" rel="stylesheet">
+    <link href="css/plugins/animate.css" rel="stylesheet">
+
+    <link href="css/plugins/preloader.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <link href="css/themes/blue-orange.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="js/lib/html5shiv.min.js"></script>
+    <script src="js/lib/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-38030533-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+
+        (function(b) {
+            (function(a) {
+                "__CF" in b && "DJS" in b.__CF ? b.__CF.DJS.push(a) : "addEventListener" in b ? b.addEventListener("load", a, !1) : b.attachEvent("onload", a)
+            })(function() {
+                "FB" in b && "Event" in FB && "subscribe" in FB.Event && (FB.Event.subscribe("edge.create", function(a) {
+                    _gaq.push(["_trackSocial", "facebook", "like", a])
+                }), FB.Event.subscribe("edge.remove", function(a) {
+                    _gaq.push(["_trackSocial", "facebook", "unlike", a])
+                }), FB.Event.subscribe("message.send", function(a) {
+                    _gaq.push(["_trackSocial", "facebook", "send", a])
+                }));
+                "twttr" in b && "events" in twttr && "bind" in twttr.events && twttr.events.bind("tweet", function(a) {
+                    if (a) {
+                        var b;
+                        if (a.target && a.target.nodeName == "IFRAME") a: {
+                            if (a = a.target.src) {
+                                a = a.split("#")[0].match(/[^?=&]+=([^&]*)?/g);
+                                b = 0;
+                                for (var c; c = a[b]; ++b)
+                                    if (c.indexOf("url") === 0) {
+                                        b = unescape(c.split("=")[1]);
+                                        break a
+                                    }
+                            }
+                            b = void 0
+                        }
+                        _gaq.push(["_trackSocial", "twitter", "tweet", b])
+                    }
+                })
+            })
+        })(window);
+        /* ]]> */
+    </script>
+
+</head>
+
+<body data-scroll-animation="false">
+
+    <div id="loading">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <div class="object" id="object_four"></div>
+                <div class="object" id="object_three"></div>
+                <div class="object" id="object_two"></div>
+                <div class="object" id="object_one"></div>
+            </div>
+        </div>
+    </div>
+
+    <header class="row" id="header">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar" aria-expanded="false">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="main-navbar">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="order.html">Order</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <section class="row page-header">
+        <div class="container">
+            <div class="row">
+                <h2>Order Now</h2>
+
+            </div>
+        </div>
+    </section>
+    <section class="row" ng-app="shopcart" ng-controller="orderCtrl" ng-init="init()" >
+
+        <div class="container" >
+          <div class="row section-header wow fadeInUp" id="orderform">
+              <h2> </h2>
+              <div>
+                  <h2>Order Form</h2>
+                  <form class="form-horizontal">
+
+                    <div class="form-group" class="sm6" >
+                      <div class="col-sm-2" >
+                      </div>
+                          <div class="col-sm-6" >
+                                    <h3 align="left">{{data.productname}} [SKU-{{data.productsku}}]</h3>
+                          </div>
+                        <div class="col-sm-2" >
+                          <select ng-model="data.qty" class="form-control" ng-change="calculate()" >
+                                  <option value="1" >1 Box [12pcs]</option>
+                                  <option value="2" selected>2 Box [24pcs]</option>
+                                  <option value="3">3 Box [36pcs]</option>
+                                  <option value="4">4 Box [48pcs]</option>
+                                  <option value="5">5 Box [60pcs]</option>
+                                  <option value="6">6 Box [72pcs]</option>
+                                  <option value="7">7 Box [84pcs]</option>
+                                  <option value="8">8 Box [96pcs]</option>
+                                  <option value="9">9 Box [108pcs]</option>
+                                  <option value="10">10 Box [120pcs]</option>
+                                  <option value="11">11 Box [132pcs]</option>
+                                  <option value="12">12 Box [144pcs]</option>
+                                  <option value="13">13 Box [156pcs]</option>
+                                  <option value="14">14 Box [168pcs]</option>
+                                  <option value="15">15 Box [180pcs]</option>
+                                  <option value="16">16 Box [192pcs]</option>
+                                  <option value="17">17 Box [204pcs]</option>
+                                  <option value="18">18 Box [216pcs]</option>
+                                  <option value="19">19 Box [228pcs]</option>
+                                  <option value="20">20 Box [240pcs]</option>
+                                  <option value="21">21 Box [252pcs]</option>
+                                  <option value="22">22 Box [264pcs]</option>
+                                  <option value="23">23 Box [276pcs]</option>
+                                  <option value="24">24 Box [288pcs]</option>
+                                  <option value="25">25 Box [300pcs]</option>
+                        </select>
+                        </div>
+                        <div class="col-sm-2" >
+                            <h3 align="right">{{data.itemprice | currency }}</h3>
+                        </div>
+                    </div>
+                    <div class="form-group" class="sm6" >
+                      <div class="col-sm-2" >
+                      </div>
+                        <div class="col-sm-8" >
+                                <h3 align="left">Delivery Charge</h3>
+                        </div>
+
+                        <div class="col-sm-2" >
+                            <h3 align="right">{{data.deliverycharge | currency}}</h3>
+                        </div>
+                    </div>
+                    <div class="form-group" class="sm6" >
+                      <div class="col-sm-2" >
+                      </div>
+                        <div class="col-sm-4" >
+                                <h3 align="left">Schedule delivery</h3>
+                        </div>
+                        <div class="col-sm-4" >
+                          <select ng-model="data.schedule" class="form-control" ng-change="calculate()" >
+                                  <option value="0" selected>Standard - 900hrs -2200hrs</option>
+                                  <option value="1" >Slot A (09:00 - 12:00)</option>
+                                  <option value="2">Slot B (12:00 - 15:00)</option>
+                                  <option value="3">Slot C (15:00 - 18:00)</option>
+                                  <option value="4">Slot D (18:00 - 22:00)</option>
+                        </select>
+                        </div>
+                        <div class="col-sm-2" >
+                            <h3 align="right">{{data.schedulecharge | currency}}</h3>
+                        </div>
+                    </div>
+                    <div class="form-group" class="sm6" >
+                      <div class="col-sm-2" >
+                      </div>
+
+                        <div class="col-sm-8" >
+                                <h3 align="right">Total</h3>
+                        </div>
+                        <div class="col-sm-2" >
+                            <h3 align="right">{{data.totalprice | currency }}</h3>
+                        </div>
+                    </div>
+
+                      <div class="form-group">
+                          <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
+                          <div class="col-sm-10">
+                              <input type="text" class="form-control" id="" placeholder="Name" ng-model="data.ordername" value="Name">
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                          <div class="col-sm-10">
+                              <input type="text" class="form-control" id="email" placeholder="Email" ng-model="data.orderemail" value="desibites.sg2017@gmail.com">
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <label for="inputEmail3" class="col-sm-2 control-label">Phone Number</label>
+                          <div class="col-sm-10">
+                              <input type="text" class="form-control" id="phone" placeholder="88888888" ng-model="data.orderphone" value="2882828">
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <label for="inputEmail3" class="col-sm-2 control-label">Address</label>
+                          <div class="col-sm-10">
+                              <input type="text" class="form-control" id="Address1" placeholder="Address1" ng-model="data.orderaddress1" value="Address 1 Lane 1">
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <label for="inputEmail3" class="col-sm-2 control-label">Address2</label>
+                          <div class="col-sm-10">
+                              <input type="text" class="form-control" id="address2" placeholder="Address2" ng-model="data.orderaddress2"  value="Address 1 Lane 2">
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <label for="inputEmail3" class="col-sm-2 control-label">Postal Code</label>
+                          <div class="col-sm-10">
+                              <input type="text" class="form-control" id="postalcode" placeholder="123452" ng-model="data.orderpostalcode" value="207226">
+                          </div>
+                      </div>
+                      <div class="form-group" >
+                        <label for="inputEmail3" class="col-sm-2 control-label">Payment Type</label>
+
+
+                          <div class="col-sm-2" >
+                            <select ng-model="data.paymenttype" class="form-control" >
+                                    <option value="Credit Card" selected>Credit Card</option>
+                                    <option value="Bank Transfer">Bank Transfer</option>
+
+
+                          </select>
+
+                          </div>
+                      </div>
+                      <div class="form-group" >
+                        <label for="inputEmail3" class="col-sm-2 control-label">Message</label>
+
+
+                          <div class="col-sm-4" >
+                              <textarea ng-model="data.ordermessage" class="form-control" >
+                              </textarea>
+
+                          </div>
+                      </div>
+                      <div class="form-group" >
+                        <label for="inputEmail3" class="col-sm-2 control-label">Terms and Condition</label>
+                          <div class="col-sm-4" style="text-align:left">
+                                <input  ng-model="data.orderterms" type="checkbox" >&nbsp;&nbsp;&nbsp;<a href="#test-popup" class="open-popup-link">Terms and Condition</a>
+                          </div>
+                          <div class="col-sm-2" >
+
+                          </div>
+                      </div>
+
+                      <div class="form-group" class="sm6" id="alertmessage" >
+                        <div class="col-sm-2" >
+                        </div>
+
+                          <div class="col-sm-1" >
+                                  <h3 align="right"></h3>
+                          </div>
+                          <div class="col-sm-8 pink"  >
+                              <h4 align="left">{{alertmessage}}</h4>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <div class="col-sm-offset-2 col-sm-6">
+                              <button type="submit" class="btn btn-warning"  ng-click="order()"><h3>Order</h3></button>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+            <div class="row section-header wow fadeInUp" id="thankyou">
+                <br><br><br><br>
+
+                  <h2> Thank you for the order.</h2>
+                    <br><br><br><br>
+                    <div class="col-sm-10">
+                      <div>
+                            <p>{{paymessage}}</p>
+                      </div>
+                      <div>
+
+                      </div>
+                    </div>
+
+                      <div class="row" style="height:300px;">
+                          <a href="index.html" class="btn btn-grey btn-lg">Thank You</a>
+                      </div>
+
+            </div>
+
+            <div class="row section-header wow fadeInUp" id="payform">
+                <h2> </h2>
+                <div>
+                    <h2>Pay Form</h2>
+                      <div class="col-sm-2" >
+                          <p style="color:red;">{{paymessage}}</p>
+                      </div>
+
+                    <form class="form-horizontal" stripe-form="stripeCallback">
+
+                          <input type="hidden" ng-modal="data.ordername" value="{{data.ordername}}" />
+                          <input type="hidden" ng-modal="data.orderemail" value="{{data.orderemail}}" />
+                          <input type="hidden" ng-modal="data.orderphone" value="{{data.orderphone}}" />
+                          <input type="hidden" ng-modal="data.orderaddress1" value="{{data.orderaddress1}}" />
+                          <input type="hidden" ng-modal="data.orderaddress2" value="{{data.orderaddress2}}" />
+                          <input type="hidden" ng-modal="data.orderpostalcode" value="{{data.orderpostalcode}}" />
+                          <input type="hidden" ng-modal="data.paymenttype" value="{{data.paymenttype}}" />
+
+                      <div class="form-group" class="sm6" >
+                        <div class="col-sm-2" >
+                        </div>
+
+                          <div class="col-sm-8" >
+                                  <h3 align="right">Total</h3>&nbsp;&nbsp;&nbsp;
+                                  <h3 align="right">{{data.totalprice | currency }}</h3>
+                          </div>
+                          <div class="col-sm-2" >
+
+                          </div>
+                      </div>
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="" placeholder="Name" ng-model="cardname" value="Humty Dumty">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">Card Number</label>
+                            <div class="col-sm-10">
+                                <input type="text"  class="form-control"  ng-model="number" payments-validate="card" payments-type-model="type" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">Expiry MM/YYYY</label>
+                            <div class="col-sm-3">
+                              <input type="text"  class="form-control"  ng-model="expiry" payments-format="expiry"  />
+                            </div>
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">CVV</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputEmail3" placeholder="123" ng-model="cvc" maxlength="3" payments-format="cvc" >
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-6">
+                                <button type="submit" class="btn btn-warning" >Pay</button>
+                            </div>
+                        </div>
+                    </form>
+                  </div>
+
+            <div class="row section-header wow fadeInUp" id="preview">
+                <h2> </h2>
+                <div>
+                    <h2>Preview Order</h2>
+
+
+                    <form class="form-horizontal" >
+
+                          <input type="hidden" ng-model="data.ordername" value="{{data.ordername}}" />
+                          <input type="hidden" ng-model="data.orderemail" value="{{data.orderemail}}" />
+                          <input type="hidden" ng-model="data.orderphone" value="{{data.orderphone}}" />
+                          <input type="hidden" ng-model="data.orderaddress1" value="{{data.orderaddress1}}" />
+                          <input type="hidden" ng-model="data.orderaddress2" value="{{data.orderaddress2}}" />
+                          <input type="hidden" ng-model="data.orderpostalcode" value="{{data.orderpostalcode}}" />
+                          <input type="hidden" ng-model="data.paymenttype" value="{{data.paymenttype}}" />
+                          <input type="hidden" ng-model="data.ordermessage" value="{{data.ordermessage}}" />
+
+                          <div class="form-group" >
+                              <div class="col-sm-2">
+                              </div>
+                            <div class="col-sm-2">
+                                <h4>Order</h4>
+                            </div>
+                              <div class="col-sm-4" style="text-align:left">
+                                  <h4>{{data.productname}}</h4>
+                              </div>
+                          </div>
+
+                          <div class="form-group" >
+                              <div class="col-sm-2">
+                              </div>
+                            <div class="col-sm-2">
+                                <h4>Item Qty</h4>
+                            </div>
+                              <div class="col-sm-4" style="text-align:left">
+                                  <h4>{{data.qty}}</h4>
+                              </div>
+                          </div>
+                          <div class="form-group" >
+                              <div class="col-sm-2">
+                              </div>
+                            <div class="col-sm-2">
+                                <h4>Item Price[Subtotal]</h4>
+                            </div>
+                              <div class="col-sm-4" style="text-align:left">
+                                  <h4>{{data.itemprice}}</h4>
+                              </div>
+                          </div>
+                          <div class="form-group" >
+                              <div class="col-sm-2">
+                              </div>
+                            <div class="col-sm-2">
+                                <h4>Total Price</h4>
+                            </div>
+                              <div class="col-sm-4" style="text-align:left">
+                                  <h4>{{data.totalprice}}</h4>
+                              </div>
+                          </div>
+                        <div class="form-group" >
+                            <div class="col-sm-2">
+                            </div>
+                          <div class="col-sm-2">
+                              <h4>Name</h4>
+                          </div>
+                            <div class="col-sm-4" style="text-align:left">
+                                <h4>{{data.ordername}}</h4>
+                            </div>
+                        </div>
+                        <div class="form-group" >
+                          <div class="col-sm-2" >
+
+                          </div>
+                          <div class="col-sm-2">
+                              <h4>Email</h4>
+                          </div>
+
+                            <div class="col-sm-4" style="text-align:left">
+                                  <h4>{{data.orderemail}}</h4>
+                            </div>
+                        </div>
+                        <div class="form-group" >
+                          <div class="col-sm-2" >
+
+                          </div>
+                          <div class="col-sm-2">
+                              <h4>Phone Number</h4>
+                          </div>
+
+                            <div class="col-sm-4" style="text-align:left" >
+                                  <h4>{{data.orderphone}}</h4>
+                            </div>
+                        </div>
+                        <div class="form-group" >
+                          <div class="col-sm-2" >
+
+                          </div>
+                          <div class="col-sm-2">
+                              <h4>Address1</h4>
+                          </div>
+
+                            <div class="col-sm-4" style="text-align:left">
+                                  <h4>{{data.orderaddress1}}</h4>
+                            </div>
+                        </div>
+                        <div class="form-group" >
+                          <div class="col-sm-2" >
+
+                          </div>
+                          <div class="col-sm-2">
+                              <h4>Address 2</h4>
+                          </div>
+
+                            <div class="col-sm-4" style="text-align:left">
+                                  <h4>{{data.orderaddress2}}</h4>
+                            </div>
+                        </div>
+                        <div class="form-group" >
+                          <div class="col-sm-2" >
+
+                          </div>
+                          <div class="col-sm-2">
+                              <h4>Postal Code</h4>
+                          </div>
+
+                            <div class="col-sm-4" style="text-align:left" >
+                                  <h4>{{data.orderpostalcode}}</h4>
+                            </div>
+                        </div>
+                        <div class="form-group" >
+                          <div class="col-sm-2" >
+
+                          </div>
+                          <div class="col-sm-2">
+                              <h4>Payment Type</h4>
+                          </div>
+
+                            <div class="col-sm-4" style="text-align:left" >
+                                  <h4>{{data.paymenttype}}</h4>
+                            </div>
+                        </div>
+                        <div class="form-group" >
+                          <div class="col-sm-2" >
+
+                          </div>
+                          <div class="col-sm-2">
+                              <h4>Message</h4>
+                          </div>
+
+                            <div class="col-sm-4" style="text-align:left" >
+                                  <h4>{{data.ordermessage}}</h4>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-6">
+                                <button type="submit" class="btn btn-warning" ng-click="bankorder()" >Confirm Order</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="row">
+        <div class="container">
+            <div class="row m0 social-links">
+                <ul class="nav">
+                    <li class="wow fadeInUp"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li class="wow fadeInUp" data-wow-delay="0.1s"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li class="wow fadeInUp" data-wow-delay="0.2s"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li class="wow fadeInUp" data-wow-delay="0.3s"><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li class="wow fadeInUp" data-wow-delay="0.4s"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li class="wow fadeInUp" data-wow-delay="0.5s"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                </ul>
+            </div>
+            <div class="row m0 menu-rights">
+                <ul class="nav footer-menu">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="terms-of-use.html">Terms and Condition</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="#">Mobile App</a></li>
+                    <li><a href="presskit.zip">PressKit</a></li>
+                </ul>
+                <p>Copyright © 2016. Fountaintechies.com.
+                    <br class="small-divide"> All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+        <div w3-include-html="terms.html"></div>
+
+<!--
+Alternative markup with data-mfp-src attribute:
+<a href="mobile-friendly-page.html" data-mfp-src="#test-popup" class="open-popup-link">Show inline popup</a>
+-->
+
+
+
+
+    <script src="js/lib/jquery-2.2.0.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.js"></script>
+    <script src="vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js"></script>
+    <script src="vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="https://www.w3schools.com/lib/w3data.js"></script>
+    <script src="js/plugins/wow.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+    <script src="lib/angular-storage.min.js"></script>
+    <script src="bower_components/angular-payments/lib/angular-payments.js"></script>
+    <script src="https://js.stripe.com/v2/"></script>
+    <script> Stripe.setPublishableKey('pk_test_OKKZyHD6nnZujaeDy0ks4fWa'); </script>
+    <script src="js/shopcartCtrl.js"></script>
+</body>
+
+</html>
+
+<!-- Localized -->

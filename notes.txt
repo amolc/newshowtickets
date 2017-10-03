@@ -1,0 +1,26 @@
+1. Delivery timing We have standard delivery between 900-2200hrs. Std_parcel Xls Sheet
+2. Schedule delivery
+    Slot A (09:00 - 12:00)
+    Slot B (12:00 - 15:00)
+    Slot C (15:00 - 18:00)
+    Slot D (18:00 - 22:00)
+     this schedule delivery will be charged SGD2 extra Sch_parcel XLS sheet.
+
+3. Max number of box please make it to 25 nos.
+Alphonso Mango [SKU-0001]
+
+$30.00
+
+
+4. We want to discourage to customer to chose 1 box . Min 2 box . So better increase delivery charges to 7SGD for 1 delivery.
+
+
+5. Terms and condition page.
+6. Once payment receive via Credit card Invoice to be email in proper PDF format.
+7. If they prefer Bank transfer need to send Perfroma invoice for payment with bank details.
+8. Once payment done via bank transfer we send them invoice.
+9.  All fields mandatory (Name , Address,postal code , Handphone , Email address , Time slot ,  PAYMENT ) Optional Residence number,
+     One remark field
+
+
+//Message Field is not working in preview for bank transfer
