@@ -29,7 +29,7 @@ var http = require("http").createServer(app);
 var www = connect();
 www.use(serveStatic('www'));
 app.use('/',www);
-app.listen(5001, function () {
-  console.log('CORS-enabled web server listening on port 5000')
+app.listen(6005, function () {
+  console.log('CORS-enabled web server listening on port 6005')
 })
-console.log("Magic at 5001");
+console.log("Magic at 6005");
