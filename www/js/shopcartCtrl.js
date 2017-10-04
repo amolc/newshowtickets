@@ -210,7 +210,7 @@
               $scope.data.deliverycharge = 0 ;
               $scope.data.productprice = 28 ;
               $scope.data.totalprice = $scope.data.productprice*$scope.data.qty ;
-              $scope.data.productname = "Alphonso Mango";
+              $scope.data.productname = "Cubcake";
               $scope.data.productsku = "0001";
               $scope.data.schedule = "0"
               $scope.data.schedulecharge = "0" ;
