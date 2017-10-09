@@ -8,7 +8,7 @@
 
     <title>Shelly Cupcake - Online Cupcake Shop.</title>
 
-
+    
     <link href='https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700' rel='stylesheet' type='text/css'>
 
     <link href="css/lib/bootstrap.min.css" rel="stylesheet">
@@ -21,10 +21,9 @@
     <link href="css/plugins/animate.css" rel="stylesheet">
 
     <link href="css/plugins/preloader.css" rel="stylesheet">
-
-    <link href="css/style.css" rel="stylesheet">
-
     <link href="css/themes/blue-orange.css" rel="stylesheet">
+    
+    <link href="css/style.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
         <script src="js/lib/html5shiv.min.js"></script>
@@ -82,6 +81,7 @@
 
 <body class="home" data-scroll-animation="true" data-spy="scroll" data-target="#main-navbar">
 
+<!--
     <div id="loading">
         <div id="loading-center">
             <div id="loading-center-absolute">
@@ -92,13 +92,17 @@
             </div>
         </div>
     </div>
+-->
 
     <header class="row" id="header">
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
 
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#header"><img src="images/logo.png" alt=""></a>
+                    <a class="navbar-brand" href="index.html">
+                      <span>Shelly</span> Cup Cakes<br>
+                        <em>Eat Happy</em>
+                    </a>
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar" aria-expanded="false">
     <span class="sr-only">Toggle navigation</span>
     <span class="icon-bar"></span>
@@ -112,168 +116,227 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="order.html">Order</a></li>
+<!--                        <li><a href="classes.html">Classes</a></li>-->
                     </ul>
                 </div>
-
             </div>
-
         </nav>
         <div class="top-banner row m0 text-center fadeInOnLoad">
             <div class="container">
-                <h2>Welcome</h2>
-                <h2>To Online Cupcake Shop</h2>
-                <p>Order online, Perfect for Any Occasion  </p>
-                <a href="order.html" class="btn btn-warning btn-lg">Order Now</a>
-                <br>
+               <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <!-- <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol> -->
 
-                <div class="row apple-watch">
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+       <div class="banner-slide-wrap">
+           <div class="col-sm-5">
+               <div class="slide-pro-img">
+                   <img src="images/slider2.png" alt="" title="" class="img-responsive">
+               </div>
+           </div>
+           <div class="col-sm-7">
+               <div class="slide-details">
+                   <h1>Welcome to Online Cupcake Shop</h1>
+                   <p>Order online, Perfect for Any Occasion</p>
+                   <a class="pink-btn" href="order.html">Order Now</a>
+               </div>
+           </div>
+       </div>
+    </div>
+    <div class="item">
+       <div class="banner-slide-wrap">
+           <div class="col-sm-5">
+               <div class="slide-pro-img">
+                   <img src="images/slider3.png" alt="" title="" class="img-responsive">
+               </div>
+           </div>
+           <div class="col-sm-7">
+               <div class="slide-details">
+                    <h1>Welcome to Online Cupcake Shop</h1>
+                   <p>Order online, Perfect for Any Occasion</p>
+                   <a class="pink-btn" href="order.html">Order Now</a>
+               </div>
+           </div>
+       </div>
+    </div>
+  </div>
 
-                </div>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="left-icon"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="right-icon"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
             </div>
         </div>
     </header>
 
 
 
-    <section class="row the-benefits" id="features">
+    <section class="pro-slide-wrap">
         <div class="container">
-            <div class="row section-header wow fadeInUp">
-                <h2>The Benefits</h2>
-                <p> Sweet made with love
-</p>
+            <form>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="section-title">Sweet made with love</h2>
+                </div>
             </div>
-            <div class="row benefit-notes" style="block:none;">
-
-                <div class="col-sm-6 col-md-4 benefit wow fadeInUp">
-                    <div class="media">
-                        <div class="media-left">
-                            <span><i class="li_heart"></i></span>
-                        </div>
-                        <div class="media-body">
-                            <h4>Fresh Mango</h4>
-                            <img src="images/mangotray.jpg" width="300" />
-                            <p>Fresh Mangoes from India. The king of mangoes available in Singapore </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4 benefit wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="media">
-                        <div class="media-left">
-                            <span><i class="li_heart"></i></span>
-                        </div>
-                        <div class="media-body">
-                            <h4>Desibites</h4>
-                            <img src="images/desibiteslogo.jpg" width="300" />
-                            <p>Desibites is at your service for providing the best Mangoes. </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4 benefit wow fadeInUp" data-wow-delay="0.6s">
-                    <div class="media">
-                        <div class="media-left">
-                            <span><i class="li_heart"></i></span>
-                        </div>
-                        <div class="media-body">
-                            <h4>Enjoy</h4>
-                            <img src="images/mangotray2.jpg" width="300" />
-                            <p>Enjoy the best taste of mangoes, slice it and just east it. </p>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-            </div>
-        </div>
-    </section>
-
-
-
-    <section class="row contact" id="contact">
-
-
-        <div id="mapBox" class="row m0" data-lat="37.3818288" data-lon="-122.0636325" data-zoom="15"></div>
-
-        <div class="flip-box-container row m0">
-            <div class="flip-box row m0 wow fadeIn">
-
-                <div class="row contact-box flip-box-part">
-                    <h2>get in touch</h2>
-                    <ul class="nav">
-                        <li><i class="fa fa-map-marker"></i>Blk 272B 16-88, Jurong west Street 24,
-                            <br>Singapore 642272</li>
-                        <li><i class="fa fa-phone"></i>+65 94495592
-                        </li>
-                        <li><i class="fa fa-envelope"></i><a class="__cf_email__" href="../../cdn-cgi/l/email-protection/index.html" data-cfemail="bac9cfcacad5c8cefacddbced9d2d6dbd4de94d9d5d7">[email&#160;protected]</a>
-                            <script data-cfhash='f9e31' type="text/javascript">
-                                /* <![CDATA[ */ ! function(t, e, r, n, c, a, p) {
-                                    try {
-                                        t = document.currentScript || function() {
-                                            for (t = document.getElementsByTagName('script'), e = t.length; e--;)
-                                                if (t[e].getAttribute('data-cfhash')) return t[e]
-                                        }();
-                                        if (t && (c = t.previousSibling)) {
-                                            p = t.parentNode;
-                                            if (a = c.getAttribute('data-cfemail')) {
-                                                for (e = '', r = '0x' + a.substr(0, 2) | 0, n = 2; a.length - n; n += 2) e += '%' + ('0' + ('0x' + a.substr(n, 2) ^ r).toString(16)).slice(-2);
-                                                p.replaceChild(document.createTextNode(decodeURIComponent(e)), c)
-                                            }
-                                            p.removeChild(t)
-                                        }
-                                    } catch (u) {}
-                                }() /* ]]> */
-                            </script>
-                        </li>
-                    </ul>
-                    <button class="flip-contact-box btn btn-block">contact us</button>
-                </div>
-
-                <div class="row contact-form flip-box-part">
-                    <a href="javascript:void(0);" class="js-close-flip">&times;</a>
-
-                    <form action="php/contact.php" id="phpcontactform" method="POST">
-                        <div class="row">
-                            <div class="form-group col-sm-6">
-                                <input type="text" name="name" class="form-control" placeholder="Name" required>
-                            </div>
-                            <div class="form-group col-sm-6">
-                                <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+            <div class="row">
+                <div class="pro-slide">
+                    <div class="col-sm-3">
+                        <div class="pro-box">
+                            <img src="images/pro-1.jpg" alt="" title="" class="img-responsive" />
+                            <div class="box-text">
+                                <h3>Durian Cupcake</h3>
+                                 <p>6 pcs per tray (S$15)</p>
+                                <div class="text-center">
+                                    <a href="order.html" class="trans-btn">Order Now</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="pro-box">
+                            <img src="images/pro-2.jpg" alt="" title="" class="img-responsive" />
+                            <div class="box-text">
+                                <h3>Cookie Monster Cupcake</h3>
+                                 <p>6 pcs per tray (S$15)</p>
+                                <div class="text-center">
+                                    <a href="order.html" class="trans-btn">Order Now</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <textarea class="form-control" name="message" placeholder="Message" required></textarea>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="pro-box">
+                            <img src="images/pro-3.jpg" alt="" title="" class="img-responsive" />
+                            <div class="box-text">
+                                <h3>Princess Topper Cupcake</h3>
+                                 <p>6 pcs per tray (S$15)</p>
+                                <div class="text-center">
+                                    <a href="order.html" class="trans-btn">Order Now</a>
+                                </div>
+                            </div>
                         </div>
-                        <button type="submit" id="js-contact-btn" class="btn btn-block">Send Message</button>
-                        <div id="js-contact-result" data-success-msg="Form submitted successfully." data-error-msg="Oops. Something went wrong."></div>
-                    </form>
-
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="pro-box">
+                            <img src="images/pro-4.jpg" alt="" title="" class="img-responsive" />
+                            <div class="box-text">
+                                <h3>Xmas Cupcake</h3>
+                                <p>6 pcs per tray (S$15)</p>
+                                <div class="text-center">
+                                    <a href="order.html" class="trans-btn">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
                 </div>
-
             </div>
+            <div class="row">
+                <div class="pro-slide">
+                    <div class="col-sm-3">
+                        <div class="pro-box">
+                            <img src="images/pro-3.jpg" alt="" title="" class="img-responsive" />
+                            <div class="box-text">
+                                <h3>ChocolateNutella Cupcake</h3>
+                                 <p>6 pcs per tray (S$15)</p>
+                                <div class="text-center">
+                                    <a href="order.html" class="trans-btn">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="pro-box">
+                            <img src="images/pro-4.jpg" alt="" title="" class="img-responsive" />
+                            <div class="box-text">
+                                <h3>Rainbow Cupcakes</h3>
+                                 <p>6 pcs per tray (S$15)</p>
+                                <div class="text-center">
+                                    <a href="order.html" class="trans-btn">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="pro-box">
+                            <img src="images/pro-1.jpg" alt="" title="" class="img-responsive" />
+                            <div class="box-text">
+                                <h3>Cookies (chocolate chips)</h3>
+                                 <p>6 pcs per tray (S$15)</p>
+                                <div class="text-center">
+                                    <a href="order.html" class="trans-btn">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="pro-box">
+                            <img src="images/pro-2.jpg" alt="" title="" class="img-responsive" />
+                            <div class="box-text">
+                                <h3>Brownies (Almond Flakes)</h3>
+                                <p>6 pcs per tray (S$15)</p>
+                                <div class="text-center">
+                                    <a href="order.html" class="trans-btn">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="pro-slide">
+                    <div class="col-sm-3">
+                        <div class="pro-box">
+                            <img src="images/pro-2.jpg" alt="" title="" class="img-responsive" />
+                            <div class="box-text">
+                                <h3>Brownies (Cheese)</h3>
+                                 <p>6 pcs per tray (S$15)</p>
+                                <div class="text-center">
+                                    <a href="order.html" class="trans-btn">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="pro-box">
+                            <img src="images/pro-1.jpg" alt="" title="" class="img-responsive" />
+                            <div class="box-text">
+                                <h3>Brownies (Chocolate Fudge)</h3>
+                                 <p>6 pcs per tray (S$15)</p>
+                                <div class="text-center">
+                                    <a href="order.html" class="trans-btn">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            </form>
         </div>
-
     </section>
-
     <footer class="row">
         <div class="container">
-            <div class="row m0 social-links">
-                <ul class="nav">
-                    <li class="wow fadeInUp"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li class="wow fadeInUp" data-wow-delay="0.1s"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li class="wow fadeInUp" data-wow-delay="0.2s"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    <li class="wow fadeInUp" data-wow-delay="0.3s"><a href="#"><i class="fa fa-youtube"></i></a></li>
-                    <li class="wow fadeInUp" data-wow-delay="0.4s"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                    <li class="wow fadeInUp" data-wow-delay="0.5s"><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                </ul>
+           <div class="contact-text">
+                <h2>get in touch</h2>
+                <p><i class="fa fa-phone"></i> +65 9449559 </p>
+               <p><i class="fa fa-envelope"></i> <a href="mailto:"> demo@gmail.com</a></p>
             </div>
             <div class="row m0 menu-rights">
-
                 <p>Copyright © 2016. Fountaintechies.
                     <br class="small-divide"> All rights reserved</p>
             </div>

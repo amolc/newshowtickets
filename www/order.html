@@ -18,10 +18,8 @@
     <link href="css/plugins/animate.css" rel="stylesheet">
 
     <link href="css/plugins/preloader.css" rel="stylesheet">
-
-    <link href="css/style.css" rel="stylesheet">
-
     <link href="css/themes/blue-orange.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
     <script src="js/lib/html5shiv.min.js"></script>
@@ -81,6 +79,7 @@
 
 <body data-scroll-animation="false">
 
+<!--
     <div id="loading">
         <div id="loading-center">
             <div id="loading-center-absolute">
@@ -91,19 +90,23 @@
             </div>
         </div>
     </div>
+-->
 
     <header class="row" id="header">
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
 
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
+                    <a class="navbar-brand" href="index.html">
+                      <span>Shelly</span> Cup Cakes<br>
+                      <em>Eat Happy</em>
+                    </a>
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar" aria-expanded="false">
-<span class="sr-only">Toggle navigation</span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-</button>
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    </button>
                 </div>
 
                 <div class="collapse navbar-collapse" id="main-navbar">
@@ -111,38 +114,34 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="order.html">Order</a></li>
+<!--                        <li><a href="classes.html">Classes</a></li>-->
                     </ul>
                 </div>
-
             </div>
-
         </nav>
     </header>
 
     <section class="row page-header">
         <div class="container">
             <div class="row">
-                <h2>Order Now</h2>
+                <h2><span>Order</span> Now</h2>
 
             </div>
         </div>
     </section>
-    <section class="row" ng-app="shopcart" ng-controller="orderCtrl" ng-init="init()" >
+    <section class="row order-wrap" ng-app="shopcart" ng-controller="orderCtrl" ng-init="init()" >
 
         <div class="container" >
-          <div class="row section-header wow fadeInUp" id="orderform">
-              <h2> </h2>
+          <div class="row section-header after-none" id="orderform">
               <div>
-                  <h2>Order Form</h2>
+<!--                  <h2><span>Order</span> Form</h2>-->
                   <form class="form-horizontal">
-
-                    <div class="form-group" class="sm6" >
-                      <div class="col-sm-2" >
-                      </div>
-                          <div class="col-sm-6" >
+                      <div class="form-wrap">
+                             <div class="form-group" class="sm6" >
+                          <div class="col-sm-5" >
                                     <h3 align="left">{{data.productname}} [SKU-{{data.productsku}}]</h3>
                           </div>
-                        <div class="col-sm-2" >
+                        <div class="col-sm-5" >
                           <select ng-model="data.qty" class="form-control" ng-change="calculate()" >
                                   <option value="1" >1 Box [12pcs]</option>
                                   <option value="2" selected>2 Box [24pcs]</option>
@@ -176,9 +175,8 @@
                         </div>
                     </div>
                     <div class="form-group" class="sm6" >
-                      <div class="col-sm-2" >
-                      </div>
-                        <div class="col-sm-8" >
+                      
+                        <div class="col-sm-10" >
                                 <h3 align="left">Delivery Charge</h3>
                         </div>
 
@@ -187,12 +185,11 @@
                         </div>
                     </div>
                     <div class="form-group" class="sm6" >
-                      <div class="col-sm-2" >
-                      </div>
-                        <div class="col-sm-4" >
+                     
+                        <div class="col-sm-5" >
                                 <h3 align="left">Schedule delivery</h3>
                         </div>
-                        <div class="col-sm-4" >
+                        <div class="col-sm-5" >
                           <select ng-model="data.schedule" class="form-control" ng-change="calculate()" >
                                   <option value="0" selected>Standard - 900hrs -2200hrs</option>
                                   <option value="1" >Slot A (09:00 - 12:00)</option>
@@ -206,58 +203,54 @@
                         </div>
                     </div>
                     <div class="form-group" class="sm6" >
-                      <div class="col-sm-2" >
-                      </div>
-
-                        <div class="col-sm-8" >
+                        <div class="col-sm-10" >
                                 <h3 align="right">Total</h3>
                         </div>
                         <div class="col-sm-2" >
                             <h3 align="right">{{data.totalprice | currency }}</h3>
                         </div>
                     </div>
-
                       <div class="form-group">
-                          <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
-                          <div class="col-sm-10">
+                          <label for="inputEmail3" class="col-sm-12 control-label">Name</label>
+                          <div class="col-sm-12">
                               <input type="text" class="form-control" id="" placeholder="Name" ng-model="data.ordername" value="Name">
                           </div>
                       </div>
                       <div class="form-group">
-                          <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-                          <div class="col-sm-10">
+                          <label for="inputEmail3" class="col-sm-12 control-label">Email</label>
+                          <div class="col-sm-12">
                               <input type="text" class="form-control" id="email" placeholder="Email" ng-model="data.orderemail" value="desibites.sg2017@gmail.com">
                           </div>
                       </div>
                       <div class="form-group">
-                          <label for="inputEmail3" class="col-sm-2 control-label">Phone Number</label>
-                          <div class="col-sm-10">
+                          <label for="inputEmail3" class="col-sm-12 control-label">Phone Number</label>
+                          <div class="col-sm-12">
                               <input type="text" class="form-control" id="phone" placeholder="88888888" ng-model="data.orderphone" value="2882828">
                           </div>
                       </div>
                       <div class="form-group">
-                          <label for="inputEmail3" class="col-sm-2 control-label">Address</label>
-                          <div class="col-sm-10">
+                          <label for="inputEmail3" class="col-sm-12 control-label">Address</label>
+                          <div class="col-sm-12">
                               <input type="text" class="form-control" id="Address1" placeholder="Address1" ng-model="data.orderaddress1" value="Address 1 Lane 1">
                           </div>
                       </div>
                       <div class="form-group">
-                          <label for="inputEmail3" class="col-sm-2 control-label">Address2</label>
-                          <div class="col-sm-10">
+                          <label for="inputEmail3" class="col-sm-12 control-label">Address2</label>
+                          <div class="col-sm-12">
                               <input type="text" class="form-control" id="address2" placeholder="Address2" ng-model="data.orderaddress2"  value="Address 1 Lane 2">
                           </div>
                       </div>
                       <div class="form-group">
-                          <label for="inputEmail3" class="col-sm-2 control-label">Postal Code</label>
-                          <div class="col-sm-10">
+                          <label for="inputEmail3" class="col-sm-12 control-label">Postal Code</label>
+                          <div class="col-sm-12">
                               <input type="text" class="form-control" id="postalcode" placeholder="123452" ng-model="data.orderpostalcode" value="207226">
                           </div>
                       </div>
                       <div class="form-group" >
-                        <label for="inputEmail3" class="col-sm-2 control-label">Payment Type</label>
+                        <label for="inputEmail3" class="col-sm-12 control-label">Payment Type</label>
 
 
-                          <div class="col-sm-2" >
+                          <div class="col-sm-12" >
                             <select ng-model="data.paymenttype" class="form-control" >
                                     <option value="Credit Card" selected>Credit Card</option>
                                     <option value="Bank Transfer">Bank Transfer</option>
@@ -268,69 +261,57 @@
                           </div>
                       </div>
                       <div class="form-group" >
-                        <label for="inputEmail3" class="col-sm-2 control-label">Message</label>
+                        <label for="inputEmail3" class="col-sm-12 control-label">Message</label>
 
 
-                          <div class="col-sm-4" >
-                              <textarea ng-model="data.ordermessage" class="form-control" >
+                          <div class="col-sm-12" >
+                              <textarea ng-model="data.ordermessage" rows="5" class="form-control" >
                               </textarea>
 
                           </div>
                       </div>
                       <div class="form-group" >
-                        <label for="inputEmail3" class="col-sm-2 control-label">Terms and Condition</label>
-                          <div class="col-sm-4" style="text-align:left">
+                        <label for="inputEmail3" class="col-sm-12 control-label">Terms and Condition</label>
+                          <div class="col-sm-12" style="text-align:left">
                                 <input  ng-model="data.orderterms" type="checkbox" >&nbsp;&nbsp;&nbsp;<a href="#test-popup" class="open-popup-link">Terms and Condition</a>
-                          </div>
-                          <div class="col-sm-2" >
-
                           </div>
                       </div>
 
                       <div class="form-group" class="sm6" id="alertmessage" >
-                        <div class="col-sm-2" >
-                        </div>
-
-                          <div class="col-sm-1" >
-                                  <h3 align="right"></h3>
-                          </div>
-                          <div class="col-sm-8 pink"  >
-                              <h4 align="left">{{alertmessage}}</h4>
+                          <div class="col-sm-12 pink"  >
+                              <h4 align="center">{{alertmessage}}</h4>
                           </div>
                       </div>
                       <div class="form-group">
-                          <div class="col-sm-offset-2 col-sm-6">
-                              <button type="submit" class="btn btn-warning"  ng-click="order()"><h3>Order</h3></button>
+                          <div class="col-sm-12 text-center">
+                              <button type="submit" class="btn btn-warning"  ng-click="order()">Order</button>
                           </div>
                       </div>
+                    </div>
                   </form>
               </div>
           </div>
-            <div class="row section-header wow fadeInUp" id="thankyou">
-                <br><br><br><br>
-
+            <div class="row section-header after-none" id="thankyou">
+                <div class="form-wrap text-center">
                   <h2> Thank you for the order.</h2>
-                    <br><br><br><br>
-                    <div class="col-sm-10">
+                    <div class="col-sm-12">
                       <div>
                             <p>{{paymessage}}</p>
                       </div>
-                      <div>
 
-                      </div>
                     </div>
 
-                      <div class="row" style="height:300px;">
+                      <div class="col-sm-12">
                           <a href="index.html" class="btn btn-grey btn-lg">Thank You</a>
                       </div>
-
+                    <div class="clearfix"></div>
+                    </div>
             </div>
 
-            <div class="row section-header wow fadeInUp" id="payform">
-                <h2> </h2>
-                <div>
+            <div class="row section-header after-none" id="payform">
+                <div class="form-wrap">
                     <h2>Pay Form</h2>
-                      <div class="col-sm-2" >
+                      <div class="col-sm-10" >
                           <p style="color:red;">{{paymessage}}</p>
                       </div>
 
@@ -345,46 +326,40 @@
                           <input type="hidden" ng-modal="data.paymenttype" value="{{data.paymenttype}}" />
 
                       <div class="form-group" class="sm6" >
-                        <div class="col-sm-2" >
-                        </div>
-
-                          <div class="col-sm-8" >
+                          <div class="col-sm-10" >
                                   <h3 align="right">Total</h3>&nbsp;&nbsp;&nbsp;
-                                  <h3 align="right">{{data.totalprice | currency }}</h3>
                           </div>
                           <div class="col-sm-2" >
-
+                              <h3 align="right">{{data.totalprice | currency }}</h3>
                           </div>
                       </div>
+                        <div class="col-sm-6">
                         <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
-                            <div class="col-sm-10">
+                            <label for="inputEmail3" class="control-label">Name</label>
                                 <input type="text" class="form-control" id="" placeholder="Name" ng-model="cardname" value="Humty Dumty">
-                            </div>
                         </div>
+                        </div>
+                        <div class="col-sm-6">
                         <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-2 control-label">Card Number</label>
-                            <div class="col-sm-10">
+                            <label for="inputEmail3" class="control-label">Card Number</label>
                                 <input type="text"  class="form-control"  ng-model="number" payments-validate="card" payments-type-model="type" />
-                            </div>
                         </div>
+                        </div>
+                        <div class="col-sm-6">
                         <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-2 control-label">Expiry MM/YYYY</label>
-                            <div class="col-sm-3">
+                            <label for="inputEmail3" class="control-label">Expiry MM/YYYY</label>
                               <input type="text"  class="form-control"  ng-model="expiry" payments-format="expiry"  />
                             </div>
-
-                            </div>
                         </div>
+                        <div class="col-sm-6">
                         <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-2 control-label">CVV</label>
-                            <div class="col-sm-10">
+                            <label for="inputEmail3" class="control-label">CVV</label>
                                 <input type="text" class="form-control" id="inputEmail3" placeholder="123" ng-model="cvc" maxlength="3" payments-format="cvc" >
-                            </div>
+                        </div>
                         </div>
 
                         <div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-6">
+                            <div class="col-sm-12 text-center m-t-40">
                                 <button type="submit" class="btn btn-warning" >Pay</button>
                             </div>
                         </div>
@@ -553,9 +528,10 @@
                 </div>
             </div>
         </div>
+        </div>
     </section>
 
-    <footer class="row">
+   <footer class="row">
         <div class="container">
             <div class="row m0 social-links">
                 <ul class="nav">
@@ -568,14 +544,8 @@
                 </ul>
             </div>
             <div class="row m0 menu-rights">
-                <ul class="nav footer-menu">
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="terms-of-use.html">Terms and Condition</a></li>
-                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                    <li><a href="#">Mobile App</a></li>
-                    <li><a href="presskit.zip">PressKit</a></li>
-                </ul>
-                <p>Copyright © 2016. Fountaintechies.com.
+
+                <p>Copyright © 2016. Fountaintechies.
                     <br class="small-divide"> All rights reserved</p>
             </div>
         </div>

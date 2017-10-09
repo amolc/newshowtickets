@@ -127,8 +127,8 @@ li {
     border-radius: 30px;
     font: 300 12px/26px "Poppins", sans-serif;
     padding: 2px 33px 0;
-    color: #000;
-    border-color: #000;
+    color: #b4bcc3;
+    border-color: #e1e4e7;
 }
 
 .btn:hover,
@@ -159,12 +159,12 @@ li {
 .white-popup {
   position: relative;
   background: #F6F6F6;
-  padding: 40px;
+  padding: 20px;
   width:auto;
-  max-width: 560px;
-  max-height: 100%;
+  max-width: 500px;
+  max-height: 200px;
   margin: 20px auto;
-  text-align: justify;
+  left:25%;
 }
 @media (max-width: 991px) {
     .btn-primary.btn-lg {
@@ -616,7 +616,7 @@ textarea.form-control {
 
 .section-header {
     margin-bottom: 50px;
-    text-align: left;
+    text-align: center;
 }
 
 .section-header:after {
@@ -629,7 +629,7 @@ textarea.form-control {
 
 .section-header h2 {
     text-transform: uppercase;
-    font: 600 35px/29px "Poppins", sans-serif;
+    font: 600 48px/29px "Poppins", sans-serif;
     padding-top: 5px;
     margin: 0 0 25px;
 }
@@ -645,7 +645,6 @@ textarea.form-control {
     max-width: 710px;
     margin: 0 auto 20px;
     font: 300 20px/32px "Poppins", sans-serif;
-    color: #000;
 }
 
 @media (max-width: 767px) {
@@ -732,11 +731,10 @@ body.home header .navbar{
     width: 203px;
 */
     transition: all 300ms linear 0s;
-    line-height: 25px;
+    line-height: 65px;
     font-size: 24px;
     text-transform: uppercase;
     font-weight: 600;
-    margin-top: 12px;
 }
 
 @media (max-width: 991px) {
@@ -2903,15 +2901,11 @@ footer.row {
 .page-header {
     text-align: center;
     padding: 150px 0 50px;
-    background-image: url(../images/bg-slide-1.jpg) !important;
 }
 
 .page-header h2 {
     margin: 0 0 15px;
     font: 600 48px/1 "Poppins", sans-serif;
-}
-.page-header h2 span{
-    color: #e47277;
 }
 
 .page-header h4 {
@@ -4134,7 +4128,7 @@ footer.row {
 }
 .slide-details h1{
     font-family: 'Pacifico', cursive;
-    font-size: 38px;
+    font-size: 48px;
     color: #e47277;
     margin-bottom: 30px;
 }
@@ -4227,14 +4221,12 @@ span.right-icon {
     text-align: center;
     color: #8f969d;
     margin-bottom: 50px;
-    text-transform: uppercase;
-    
 }
 .pro-slide-wrap{
     padding: 40px 0px 20px;
 }
 .box-text{
-    padding: 15px 10px;
+    padding: 15px;
 }
 .box-text h3{
     font-size: 18px;
@@ -4281,70 +4273,4 @@ footer.row {
 }
 .navbar-brand span{
     color: #e47277;
-}
-.order-wrap{
-    padding: 70px 0px;
-}
-.form-wrap{
-    background-color: #ffebe8;
-    color: #616060;
-    padding: 50px;
-    width: 80%;
-    box-shadow: 1px 1px 5px #bfbfbf;
-    margin: 0 auto;
-    font-family: 'Roboto Slab', serif;
-}
-.form-horizontal .control-label{
-    font-size: 18px;
-    font-weight: normal;
-    font-family: 'Roboto Slab', serif;
-    text-align: left;
-    margin-bottom: 10px;
-}
-.mfp-container{
-    background: rgba(0, 0, 0, 0.7)
-}
-.after-none:after{
-    display: none;
-}
-.form-control:focus{
-    background: #FFF;
-}
-.form-horizontal .form-group{
-    margin-left: 0px;
-    margin-right: 0px;
-}
-.navbar-brand em{
-    font-size: 16px;
-    font-style: normal;
-    float: right;
-    color: #e47277;
-    display: block;
-}
-.classes-wrap{
-    padding:30px 0px 60px;
-}
-.classes-text{
-    width: 70%;
-    text-align: center;
-    margin: 0 auto;
-}
-.classes-text p{
-    font-size: 19px;
-}
-.classes-text img{
-    width: 40%;
-    display: block;
-    margin: 0 auto 30px;
-}
-.contact-text {
-    color: #fff;
-    border-bottom: 1px solid #fff;
-    padding-bottom: 10px;
-}
-.contact-text h2{
-    text-transform: uppercase;
-}
-.contact-text a, .contact-text p, .contact-text h2{
-    color: #ffffff;
 }
