@@ -5,7 +5,7 @@
 
     }]);
     app.controller('orderCtrl', function($scope, $http,$window,$location ,$sce, $timeout, store) {
-      $window.Stripe.setPublishableKey('pk_test_OKKZyHD6nnZujaeDy0ks4fWa');
+      $window.Stripe.setPublishableKey('pk_test_lTp89fhcIMVEFL2HSVRqJTHO');
       //$window.Stripe.setPublishableKey('pk_live_325verdKtnzQhpKw10fVcXSU');
 
       $scope.redirect = function () {
@@ -30,14 +30,29 @@
           //  console.log('Order Terms', $scope.data.orderterms);
 
            console.log($scope.data);
-           $http.post(baseurl + 'addbankorder',$scope.data)
+            $http.post(baseurl + 'addbankorder/',$scope.data).success(function(res) {
+               $scope.response = res;
+              //  console.log(res);
+                if (res.status == 'false') {
+                  alert(res.message);
+                } else {
+                  alert(res.message);
+                  $("#orderform").hide();
+                  $("#preview").hide();
+                  $("#thankyou").show();
+                  //$location.path("/Cart");
+                }
+              }).error(function() {
+                    // alert("Please check your internet connection or data source..");
+              });
+           /*$http.post(baseurl + 'addbankorder/',$scope.data)
                 .success(function(res) {
                   //console.log(res);
                   $scope.redirect();
                 })
                 .error(function() {
                   alert("Please check your internet connection or data source..");
-                  });
+                  });*/
 
 
       }
@@ -87,7 +102,19 @@
 
 
                 console.log($scope.data);
-                $http.post(baseurl + 'addorder',$scope.data).success(function(res) {
+                $http.post(baseurl + 'addorder/',$scope.data).success(function(res) {
+                  $scope.response = res;
+                //  console.log(res);
+                  if (res.status == 'false') {
+                    alert(res.message);
+                  } else {
+                    alert(res.message);
+                    //$location.path("/Cart");
+                  }
+                }).error(function() {
+                      // alert("Please check your internet connection or data source..");
+                });
+                /*$http.post(baseurl + 'addorder',$scope.data).success(function(res) {
           				$scope.response = res;
           				console.log(res);
           				if (res.status == 'false') {
@@ -98,7 +125,7 @@
           				}
           			}).error(function() {
           				    // alert("Please check your internet connection or data source..");
-          			});
+          			});*/
 
 
 
@@ -191,8 +218,8 @@
             $scope.data.schedulecharge = 0 ;
             $scope.data.totalprice = 0 ;
             $scope.data.productprice = 28 ;
-            if($scope.data.qty==1){
-              $scope.data.deliverycharge = 7 ;
+            if($scope.data.qty==1 || $scope.data.qty==2){
+              $scope.data.deliverycharge = 5 ;
             }
 
             if($scope.data.schedule!=="0"){
@@ -210,7 +237,7 @@
               $scope.data.deliverycharge = 0 ;
               $scope.data.productprice = 28 ;
               $scope.data.totalprice = $scope.data.productprice*$scope.data.qty ;
-              $scope.data.productname = "Cubcake";
+              $scope.data.productname = "Cupcake";
               $scope.data.productsku = "0001";
               $scope.data.schedule = "0"
               $scope.data.schedulecharge = "0" ;
@@ -222,6 +249,22 @@
               $("#preview").hide();
               $("#alertmessage").hide();
           }
-          var baseurl = "http://localhost:5000/api/" ;
+
+          if (document.location.hostname == "shelly.80startups.com")
+          {
+            var baseurl = "https://shelly.80startups.com/api/";
+            app.config(['storeProvider', function (storeProvider) {
+              storeProvider.setStore('sessionStorage');
+            }]);
+
+          }else{
+
+            var baseurl = "http://localhost:5001/api/";
+            //var baseurl = "http://crm.fountaintechies.com/api/";
+            app.config(['storeProvider', function (storeProvider) {
+              storeProvider.setStore('sessionStorage');
+            }]);
+          }
+          //var baseurl = "http://localhost:5000/api/" ;
           //var baseurl = "http://128.199.230.90:5000/api/" ;
     });

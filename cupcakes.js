@@ -1,15 +1,17 @@
 var connect = require('connect');
-var app = connect();
+var express = require('express');
+var app = express();
 var bodyParser = require('body-parser');
 var serveStatic = require('serve-static');
 var path = require('path');
 var bodyParser = require( 'body-parser' );
 var nodemailer = require( 'nodemailer' );
 var cors = require('cors');
+var http = require("http").createServer(app);
 //API
-// var order = require('./api/order');
-// app.post('/api/addorder', order.addorder);
-//APi
+var order = require('./api/order.js');
+
+
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
@@ -23,12 +25,16 @@ app.use(bodyParser.urlencoded({ limit: '50mb', extended: true, type:'application
 app.use(bodyParser.json({ type: 'application/*+json' }));
 app.use(bodyParser.raw({ limit: '50mb' }));
 
-app = require('./api/api');
+//app = require('./api/api');
 var http = require("http").createServer(app);
 
 var www = connect();
 www.use(serveStatic('www'));
 app.use('/',www);
+
+app.post('/api/addorder', order.addorder);
+app.post('/api/addbankorder', order.addbankorder);
+
 app.listen(5001, function () {
   console.log('CORS-enabled web server listening on port 5000')
 })

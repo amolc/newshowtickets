@@ -291,81 +291,6 @@
                   </form>
               </div>
           </div>
-            <div class="row section-header after-none" id="thankyou">
-                <div class="form-wrap text-center">
-                  <h2> Thank you for the order.</h2>
-                    <div class="col-sm-12">
-                      <div>
-                            <p>{{paymessage}}</p>
-                      </div>
-
-                    </div>
-
-                      <div class="col-sm-12">
-                          <a href="index.html" class="btn btn-grey btn-lg">Thank You</a>
-                      </div>
-                    <div class="clearfix"></div>
-                    </div>
-            </div>
-
-            <div class="row section-header after-none" id="payform">
-                <div class="form-wrap">
-                    <h2>Pay Form</h2>
-                      <div class="col-sm-10" >
-                          <p style="color:red;">{{paymessage}}</p>
-                      </div>
-
-                    <form class="form-horizontal" stripe-form="stripeCallback">
-
-                          <input type="hidden" ng-modal="data.ordername" value="{{data.ordername}}" />
-                          <input type="hidden" ng-modal="data.orderemail" value="{{data.orderemail}}" />
-                          <input type="hidden" ng-modal="data.orderphone" value="{{data.orderphone}}" />
-                          <input type="hidden" ng-modal="data.orderaddress1" value="{{data.orderaddress1}}" />
-                          <input type="hidden" ng-modal="data.orderaddress2" value="{{data.orderaddress2}}" />
-                          <input type="hidden" ng-modal="data.orderpostalcode" value="{{data.orderpostalcode}}" />
-                          <input type="hidden" ng-modal="data.paymenttype" value="{{data.paymenttype}}" />
-
-                      <div class="form-group" class="sm6" >
-                          <div class="col-sm-10" >
-                                  <h3 align="right">Total</h3>&nbsp;&nbsp;&nbsp;
-                          </div>
-                          <div class="col-sm-2" >
-                              <h3 align="right">{{data.totalprice | currency }}</h3>
-                          </div>
-                      </div>
-                        <div class="col-sm-6">
-                        <div class="form-group">
-                            <label for="inputEmail3" class="control-label">Name</label>
-                                <input type="text" class="form-control" id="" placeholder="Name" ng-model="cardname" value="Humty Dumty">
-                        </div>
-                        </div>
-                        <div class="col-sm-6">
-                        <div class="form-group">
-                            <label for="inputEmail3" class="control-label">Card Number</label>
-                                <input type="text"  class="form-control"  ng-model="number" payments-validate="card" payments-type-model="type" />
-                        </div>
-                        </div>
-                        <div class="col-sm-6">
-                        <div class="form-group">
-                            <label for="inputEmail3" class="control-label">Expiry MM/YYYY</label>
-                              <input type="text"  class="form-control"  ng-model="expiry" payments-format="expiry"  />
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                        <div class="form-group">
-                            <label for="inputEmail3" class="control-label">CVV</label>
-                                <input type="text" class="form-control" id="inputEmail3" placeholder="123" ng-model="cvc" maxlength="3" payments-format="cvc" >
-                        </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-sm-12 text-center m-t-40">
-                                <button type="submit" class="btn btn-warning" >Pay</button>
-                            </div>
-                        </div>
-                    </form>
-                  </div>
-
             <div class="row section-header wow fadeInUp" id="preview">
                 <h2> </h2>
                 <div>
@@ -527,6 +452,82 @@
                     </form>
                 </div>
             </div>
+            <div class="row section-header after-none" id="thankyou">
+                <div class="form-wrap text-center">
+                  <h2> Thank you for the order.</h2>
+                    <div class="col-sm-12">
+                      <div>
+                            <p>{{paymessage}}</p>
+                      </div>
+
+                    </div>
+
+                      <div class="col-sm-12">
+                          <a href="index.html" class="btn btn-grey btn-lg">Thank You</a>
+                      </div>
+                    <div class="clearfix"></div>
+                    </div>
+            </div>
+
+            <div class="row section-header after-none" id="payform">
+                <div class="form-wrap">
+                    <h2>Pay Form</h2>
+                      <div class="col-sm-10" >
+                          <p style="color:red;">{{paymessage}}</p>
+                      </div>
+
+                    <form class="form-horizontal" stripe-form="stripeCallback">
+
+                          <input type="hidden" ng-modal="data.ordername" value="{{data.ordername}}" />
+                          <input type="hidden" ng-modal="data.orderemail" value="{{data.orderemail}}" />
+                          <input type="hidden" ng-modal="data.orderphone" value="{{data.orderphone}}" />
+                          <input type="hidden" ng-modal="data.orderaddress1" value="{{data.orderaddress1}}" />
+                          <input type="hidden" ng-modal="data.orderaddress2" value="{{data.orderaddress2}}" />
+                          <input type="hidden" ng-modal="data.orderpostalcode" value="{{data.orderpostalcode}}" />
+                          <input type="hidden" ng-modal="data.paymenttype" value="{{data.paymenttype}}" />
+
+                      <div class="form-group" class="sm6" >
+                          <div class="col-sm-10" >
+                                  <h3 align="right">Total</h3>&nbsp;&nbsp;&nbsp;
+                          </div>
+                          <div class="col-sm-2" >
+                              <h3 align="right">{{data.totalprice | currency }}</h3>
+                          </div>
+                      </div>
+                        <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="control-label">Name</label>
+                                <input type="text" class="form-control" id="" placeholder="Name" ng-model="cardname" value="Humty Dumty">
+                        </div>
+                        </div>
+                        <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="control-label">Card Number</label>
+                                <input type="text"  class="form-control"  ng-model="number" payments-validate="card" payments-type-model="type" />
+                        </div>
+                        </div>
+                        <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="control-label">Expiry MM/YYYY</label>
+                              <input type="text"  class="form-control"  ng-model="expiry" payments-format="expiry"  />
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="control-label">CVV</label>
+                                <input type="text" class="form-control" id="inputEmail3" placeholder="123" ng-model="cvc" maxlength="3" payments-format="cvc" >
+                        </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-12 text-center m-t-40">
+                                <button type="submit" class="btn btn-warning" >Pay</button>
+                            </div>
+                        </div>
+                    </form>
+                  </div>
+
+          
         </div>
         </div>
     </section>
@@ -552,6 +553,9 @@ Alternative markup with data-mfp-src attribute:
 -->
 
 
+  <!--chat plugin -->
+    <script type="text/javascript" async="async" defer="defer" data-cfasync="false" src="https://mylivechat.com/chatinline.aspx?hccid=34725535"></script>
+    <!--chat plugin -->
 
 
     <script src="js/lib/jquery-2.2.0.min.js"></script>
