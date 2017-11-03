@@ -1,7 +1,7 @@
 
 var mysql =require('mysql');
 var crud = require('mysql-crud');
-var stripe = require("stripe")("sk_test_GWo9JO8BeSsKJoE3XKNHy0I7");//sk_live_QuflwPmAKaZMJoZAogwEJlY2 //sk_test_y0BiTcY7tiFEIWTrOggOGKVY
+var stripe = require("stripe")("sk_live_71uHeqVfMLWXdjY8zbYhSM7t");//sk_live_QuflwPmAKaZMJoZAogwEJlY2 //sk_test_y0BiTcY7tiFEIWTrOggOGKVY
 var db = require('./database');
 var CRUD = require('mysql-crud');
 var nodemailer = require('nodemailer');
