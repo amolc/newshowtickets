@@ -34,6 +34,8 @@ app.use('/',www);
 
 app.post('/api/addorder', order.addorder);
 app.post('/api/addbankorder', order.addbankorder);
+app.get('/api/get-data', order.getdata);
+app.get('/api/get-product-data/:id', order.getproductdata);
 
 app.listen(5001, function () {
   console.log('CORS-enabled web server listening on port 5000')

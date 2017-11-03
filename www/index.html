@@ -79,7 +79,7 @@
     </script>
 </head>
 
-<body class="home" data-scroll-animation="true" data-spy="scroll" data-target="#main-navbar">
+<body class="home" ng-app="shopcart" ng-controller="productCtrl" ng-init="init()" data-scroll-animation="true" data-spy="scroll" data-target="#main-navbar" >
 
 <!--
     <div id="loading">
@@ -193,7 +193,23 @@
             </div>
             <div class="row">
                 <div class="pro-slide">
-                    <div class="col-sm-3">
+
+                <div class="col-sm-3" ng-repeat="product in products">
+                        <div class="pro-box">
+                            <img src="images/{{product.productImage}}" alt="" title="" class="img-responsive" />
+                            <div class="box-text">
+                                <h3>{{product.productName}}</h3>
+                                 <p>{{product.packetSize}} pcs per tray (S${{product.productPrice}})</p>
+                                <div class="text-center">
+                                    <a href="order.html?id={{product.productId}}" class="trans-btn">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                       <!-- <div class="clearfix">{{$index}}</div> -->
+                    </div>
+                    
+
+                    <!--<div class="col-sm-3">
                         <div class="pro-box">
                             <img src="images/pro-1.jpg" alt="" title="" class="img-responsive" />
                             <div class="box-text">
@@ -334,7 +350,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                     <div class="clearfix"></div>
                 </div>
             </div>
@@ -354,6 +370,7 @@
             </div>
         </div>
     </footer>
+
 
     <div class="row product-box mfp-hide" id="product-choose">
         <button class="mfp-close custom_close" title="Close (Esc)" type="button">&#215;</button>
@@ -486,6 +503,7 @@
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="js/plugins/gmaps.min.js"></script>
     <script src="js/plugins/google-map.js"></script>
+     <script src="https://www.w3schools.com/lib/w3data.js"></script>
     <script src="js/plugins/wow.min.js"></script>
     <script src="js/plugins/validate.js"></script>
 
@@ -494,6 +512,12 @@
     <script src="js/includes/contact.js"></script>
 
     <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+    <script src="lib/angular-storage.min.js"></script>
+    <script src="bower_components/angular-payments/lib/angular-payments.js"></script>
+    <script src="https://js.stripe.com/v2/"></script>
+    <script> Stripe.setPublishableKey('pk_test_OKKZyHD6nnZujaeDy0ks4fWa'); </script>
+    <script src="js/shopcartCtrl.js"></script>
 </body>
 
 </html>

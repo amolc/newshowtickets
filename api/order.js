@@ -1,7 +1,7 @@
 
 var mysql =require('mysql');
 var crud = require('mysql-crud');
-var stripe = require("stripe")("sk_live_71uHeqVfMLWXdjY8zbYhSM7t");//sk_live_QuflwPmAKaZMJoZAogwEJlY2 //sk_test_y0BiTcY7tiFEIWTrOggOGKVY
+var stripe = require("stripe")("sk_test_GWo9JO8BeSsKJoE3XKNHy0I7");//sk_live_QuflwPmAKaZMJoZAogwEJlY2 //sk_test_y0BiTcY7tiFEIWTrOggOGKVY
 var db = require('./database');
 var CRUD = require('mysql-crud');
 var nodemailer = require('nodemailer');
@@ -162,6 +162,8 @@ exports.addorder = function(req, res){
                              send_mail( agentemail, subject, mailbody );
                              send_mail( officeremail, subject, mailbody );
                              send_mail( data.orderemail, subject, mailbody );
+                             //mail to ordering customer
+                             //send_mail( data.orderemail, subject, mailbody );
 
                         }
 
@@ -272,4 +274,31 @@ exports.addbankorder = function(req, res){
 exports.gethi = function(req, res){
         console.log("gethi");
         console.log(req.body);
+};
+
+exports.getdata = function(req, res){
+    
+    var sql = "SELECT * FROM `tbl_products`";
+    console.log(sql);
+    db.query(sql, function (err, data) {
+
+        //console.log(data);
+        res.json(data);
+    });
+
+};
+
+
+exports.getproductdata = function(req, res){
+   
+    //console.log(req.params.id); 
+    productId = req.params.id ;
+    var sql = "SELECT * FROM `tbl_products` where productId = "+productId;
+    console.log(sql);
+    db.query(sql, function (err, data) {
+
+        //console.log(data);
+        res.json(data[0]);
+    });
+
 };

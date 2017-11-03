@@ -1,7 +1,7 @@
 exports.createConnection = function () {
 
     var connection = mysql.createConnection({
-      	     database : 'pravola-chatbot',
+      	    database : 'pravola-chatbot',
 		    user : 'ftdev',
 			password : '10gXWOqeaf',
 		    host :'apps.fountaintechies.com',

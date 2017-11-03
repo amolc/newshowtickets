@@ -4,6 +4,30 @@
         storeProvider.setStore('sessionStorage');
 
     }]);
+
+   app.controller('productCtrl', function($scope, $http,$window) {
+
+      $scope.init = function() {
+              
+
+              $http.get(baseurl + 'get-data/').success(function (res) {
+                        if (res.status == 'false') {
+
+                        }else {
+
+                         // console.log(res);
+
+                          $scope.products = res ;
+                          console.log($scope.products)
+                        }
+                    }).error(function () {
+                    });
+          }
+
+    
+
+     });
+
     app.controller('orderCtrl', function($scope, $http,$window,$location ,$sce, $timeout, store) {
       $window.Stripe.setPublishableKey('pk_test_lTp89fhcIMVEFL2HSVRqJTHO');
       //$window.Stripe.setPublishableKey('pk_live_325verdKtnzQhpKw10fVcXSU');
@@ -214,35 +238,56 @@
 
         $scope.calculate = function (){
             console.log('qty', $scope.data.qty)
-            $scope.data.deliverycharge = 0 ;
+            $scope.data.deliverycharge = 10 ;
             $scope.data.schedulecharge = 0 ;
             $scope.data.totalprice = 0 ;
-            $scope.data.productprice = 28 ;
-            if($scope.data.qty==1 || $scope.data.qty==2){
-              $scope.data.deliverycharge = 5 ;
-            }
-
-            if($scope.data.schedule!=="0"){
-              $scope.data.schedulecharge = 2 ;
-            }
+            $scope.data.productprice = 15 ;
+            
             $scope.data.itemprice = $scope.data.qty*$scope.data.productprice;
-            $scope.data.totalprice = $scope.data.itemprice+$scope.data.deliverycharge+$scope.data.schedulecharge ;
+            $scope.data.totalprice = $scope.data.itemprice+$scope.data.deliverycharge;
+            //$scope.data.totalprice = $scope.data.itemprice+$scope.data.deliverycharge+$scope.data.schedulecharge ;
             console.log('totalprice',$scope.data.totalprice);
           }
 
           $scope.init = function() {
+
               $scope.data = {};
-              $scope.data.paymenttype = "Credit Card";
-              $scope.data.qty ="2" ;
-              $scope.data.deliverycharge = 0 ;
-              $scope.data.productprice = 28 ;
-              $scope.data.totalprice = $scope.data.productprice*$scope.data.qty ;
               $scope.data.productname = "Cupcake";
+              $scope.data.qty ="1" ;
+              $scope.data.productprice = 15 ;
+
+              var url = window.location.href;
+               // console.log(url);
+                var parts = url.split("?");
+              if(parts.length>0){
+                   var urlparams = parts[1];
+                   var urlpart = urlparams.split('&');
+                   var productId = urlpart[0].split('=');
+  
+                    $scope.productId= productId[1];
+                    $http.get(baseurl + 'get-product-data/'+$scope.productId).success(function (res) {
+                        if (res.status == 'false') {
+                        }else {
+
+                          //console.log(res.productId);
+                          $scope.data.productname = res.productName;
+                          $scope.data.qty = res.packetSize ;
+                          $scope.data.productprice = res.productPrice ;
+                           
+                        }
+                    }).error(function () {
+                    });
+              }
+
+             
+              $scope.data.paymenttype = "Credit Card";
+              $scope.data.deliverycharge = 10 ;              
+              $scope.data.totalprice = ($scope.data.productprice*$scope.data.qty)+$scope.data.deliverycharge ;              
               $scope.data.productsku = "0001";
               $scope.data.schedule = "0"
               $scope.data.schedulecharge = "0" ;
               $scope.data.orderterms ="false" ;
-              $scope.data.itemprice = $scope.data.productprice*2 ;
+              $scope.data.itemprice = $scope.data.productprice*1 ;
               w3IncludeHTML();
               $("#payform").hide();
               $("#thankyou").hide();
@@ -250,7 +295,12 @@
               $("#alertmessage").hide();
           }
 
-          if (document.location.hostname == "shelly.80startups.com")
+        
+          //var baseurl = "http://localhost:5000/api/" ;
+          //var baseurl = "http://128.199.230.90:5000/api/" ;
+    });
+
+  if (document.location.hostname == "shelly.80startups.com")
           {
             var baseurl = "https://shelly.80startups.com/api/";
             app.config(['storeProvider', function (storeProvider) {
@@ -265,6 +315,3 @@
               storeProvider.setStore('sessionStorage');
             }]);
           }
-          //var baseurl = "http://localhost:5000/api/" ;
-          //var baseurl = "http://128.199.230.90:5000/api/" ;
-    });

@@ -138,23 +138,12 @@
                   <form class="form-horizontal">
                       <div class="form-wrap">
                              <div class="form-group" class="sm6" >
-                          <div class="col-sm-5" >
-                                    <h3 align="left">{{data.productname}} [SKU-{{data.productsku}}]</h3>
+                          <div class="col-sm-10" >
+                                    <h3 align="left">{{data.productname}} - 6 pcs per tray</h3>
                           </div>
-                        <div class="col-sm-5" >
-                          <select ng-model="data.qty" class="form-control" ng-change="calculate()" >
-                                  <option value="Durian Cupcake" selected>Durian Cupcake</option>
-                                  <option value="Cookie Monster Cupcake">Cookie Monster Cupcake</option>
-                                  <option value="Princess Topper Cupcake">Princess Topper Cupcake</option>
-                                  <option value="Xmas Cupcake">Xmas Cupcake</option>
-                                  <option value="ChocolateNutella Cupcake">ChocolateNutella Cupcake</option>
-                                  <option value="Rainbow Cupcakes">Rainbow Cupcakes</option>
-                                  <option value="Cookies (chocolate chips)">Cookies (chocolate chips)</option>
-                                  <option value="Brownies (Almond Flakes)">Brownies (Almond Flakes)</option>
-                                  <option value="Brownies (Cheese)">Brownies (Cheese)</option>
-                                  <option value="Brownies (Chocolate Fudge)">Brownies (Chocolate Fudge)</option>
-                        </select>
-                        </div>
+                        <!-- <div class="col-sm-5" >
+                          6 pcs per tray
+                        </div> -->
                         <div class="col-sm-2" >
                             <h3 align="right">{{data.itemprice | currency }}</h3>
                         </div>
@@ -175,7 +164,7 @@
                                 <h3 align="left">Schedule delivery</h3>
                         </div>
                         <div class="col-sm-5" >
-                          <select ng-model="data.schedule" class="form-control" ng-change="calculate()" >
+                          <select ng-model="data.schedule" class="form-control"  > <!-- ng-change="calculate()" -->
                                   <option value="0" selected>Standard - 900hrs -2200hrs</option>
                                   <option value="1" >Slot A (09:00 - 12:00)</option>
                                   <option value="2">Slot B (12:00 - 15:00)</option>
@@ -195,42 +184,58 @@
                             <h3 align="right">{{data.totalprice | currency }}</h3>
                         </div>
                     </div>
+                    <div class="col-sm-6">
                       <div class="form-group">
+                        
                           <label for="inputEmail3" class="col-sm-12 control-label">Name</label>
                           <div class="col-sm-12">
                               <input type="text" class="form-control" id="" placeholder="Name" ng-model="data.ordername" value="Name">
                           </div>
+                        </div>
+
                       </div>
+                    <div class="col-sm-6">
                       <div class="form-group">
                           <label for="inputEmail3" class="col-sm-12 control-label">Email</label>
                           <div class="col-sm-12">
                               <input type="text" class="form-control" id="email" placeholder="Email" ng-model="data.orderemail" value="desibites.sg2017@gmail.com">
                           </div>
                       </div>
+                    </div>
+
+                    <div class="col-sm-6">
                       <div class="form-group">
                           <label for="inputEmail3" class="col-sm-12 control-label">Phone Number</label>
                           <div class="col-sm-12">
                               <input type="text" class="form-control" id="phone" placeholder="88888888" ng-model="data.orderphone" value="2882828">
                           </div>
                       </div>
+                    </div>
+                    <div class="col-sm-6">
                       <div class="form-group">
                           <label for="inputEmail3" class="col-sm-12 control-label">Address</label>
                           <div class="col-sm-12">
                               <input type="text" class="form-control" id="Address1" placeholder="Address1" ng-model="data.orderaddress1" value="Address 1 Lane 1">
                           </div>
                       </div>
+                    </div>
+                    <div class="col-sm-6">
                       <div class="form-group">
                           <label for="inputEmail3" class="col-sm-12 control-label">Address2</label>
                           <div class="col-sm-12">
                               <input type="text" class="form-control" id="address2" placeholder="Address2" ng-model="data.orderaddress2"  value="Address 1 Lane 2">
                           </div>
                       </div>
+                    </div>
+                    <div class="col-sm-6">
                       <div class="form-group">
                           <label for="inputEmail3" class="col-sm-12 control-label">Postal Code</label>
                           <div class="col-sm-12">
                               <input type="text" class="form-control" id="postalcode" placeholder="123452" ng-model="data.orderpostalcode" value="207226">
                           </div>
                       </div>
+                    </div>
+                    <div class="col-sm-6">
                       <div class="form-group" >
                         <label for="inputEmail3" class="col-sm-12 control-label">Payment Type</label>
 
@@ -247,6 +252,8 @@
 
                           </div>
                       </div>
+                    </div>
+                    <div class="col-sm-11">
                       <div class="form-group" >
                         <label for="inputEmail3" class="col-sm-12 control-label">Message</label>
 
@@ -257,13 +264,15 @@
 
                           </div>
                       </div>
+                    </div>
+                     <div class="col-sm-11">
                       <div class="form-group" >
                         <label for="inputEmail3" class="col-sm-12 control-label">Terms and Condition</label>
                           <div class="col-sm-12" style="text-align:left">
                                 <input  ng-model="data.orderterms" type="checkbox" >&nbsp;&nbsp;&nbsp;<a href="#test-popup" class="open-popup-link">Terms and Condition</a>
                           </div>
                       </div>
-
+                    </div>
                       <div class="form-group" class="sm6" id="alertmessage" >
                           <div class="col-sm-12 pink"  >
                               <h4 align="center">{{alertmessage}}</h4>
@@ -558,7 +567,7 @@ Alternative markup with data-mfp-src attribute:
     <script src="lib/angular-storage.min.js"></script>
     <script src="bower_components/angular-payments/lib/angular-payments.js"></script>
     <script src="https://js.stripe.com/v2/"></script>
-    <script> Stripe.setPublishableKey('pk_test_OKKZyHD6nnZujaeDy0ks4fWa'); </script>
+    <script> Stripe.setPublishableKey('pk_test_lTp89fhcIMVEFL2HSVRqJTHO'); </script>
     <script src="js/shopcartCtrl.js"></script>
 </body>
 
