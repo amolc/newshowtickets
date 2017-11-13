@@ -238,11 +238,17 @@
 
         $scope.calculate = function (){
             console.log('qty', $scope.data.qty)
-            $scope.data.deliverycharge = 10 ;
+            $scope.data.deliverycharge = 0 ;
             $scope.data.schedulecharge = 0 ;
             $scope.data.totalprice = 0 ;
             $scope.data.productprice = 15 ;
-            
+             if($scope.data.qty<=4){ 
+              $scope.data.deliverycharge = 10 ; 
+            } 
+ 
+            /*if($scope.data.schedule!=="0"){ 
+              $scope.data.schedulecharge = 2 ; 
+            } */
             $scope.data.itemprice = $scope.data.qty*$scope.data.productprice;
             $scope.data.totalprice = $scope.data.itemprice+$scope.data.deliverycharge;
             //$scope.data.totalprice = $scope.data.itemprice+$scope.data.deliverycharge+$scope.data.schedulecharge ;
@@ -309,7 +315,7 @@
 
           }else{
 
-            var baseurl = "http://localhost:5001/api/";
+            var baseurl = "http://localhost:6005/api/";
             //var baseurl = "http://crm.fountaintechies.com/api/";
             app.config(['storeProvider', function (storeProvider) {
               storeProvider.setStore('sessionStorage');

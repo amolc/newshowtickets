@@ -136,14 +136,22 @@
               <div>
 <!--                  <h2><span>Order</span> Form</h2>-->
                   <form class="form-horizontal">
-                      <div class="form-wrap">
-                             <div class="form-group" class="sm6" >
-                          <div class="col-sm-10" >
-                                    <h3 align="left">{{data.productname}} - 6 pcs per tray</h3>
+                    <div class="form-wrap">
+                       <div class="form-group" class="sm6" >
+                          <div class="col-sm-5" >
+                                    <h3 align="left">{{data.productname}}</h3>
                           </div>
-                        <!-- <div class="col-sm-5" >
-                          6 pcs per tray
-                        </div> -->
+                        <div class="col-sm-5" >
+                          <select ng-model="data.qty" class="form-control" ng-change="calculate()" >
+                                  <option value="1" >1 Tray [6pcs]</option>
+                                  <option value="2" selected>2 Tray [12pcs]</option>
+                                  <option value="3">3 Tray [18pcs]</option>
+                                  <option value="4">4 Tray [24pcs]</option>
+                                  <option value="5">5 Tray [30pcs]</option>
+                                  <option value="6">6 Tray [36pcs]</option>
+                                  
+                        </select>
+                        </div>
                         <div class="col-sm-2" >
                             <h3 align="right">{{data.itemprice | currency }}</h3>
                         </div>
@@ -164,7 +172,7 @@
                                 <h3 align="left">Schedule delivery</h3>
                         </div>
                         <div class="col-sm-5" >
-                          <select ng-model="data.schedule" class="form-control"  > <!-- ng-change="calculate()" -->
+                          <select ng-model="data.schedule" class="form-control" ng-change="calculate()" > <!--  -->
                                   <option value="0" selected>Standard - 900hrs -2200hrs</option>
                                   <option value="1" >Slot A (09:00 - 12:00)</option>
                                   <option value="2">Slot B (12:00 - 15:00)</option>
@@ -284,6 +292,7 @@
                           </div>
                       </div>
                     </div>
+
                   </form>
               </div>
           </div>

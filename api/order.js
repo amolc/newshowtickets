@@ -147,17 +147,17 @@ exports.addorder = function(req, res){
                              + "</br><p><b> Address 2:</b> " + data.orderaddress2 + "</p>"
                              + "</br><p><b> Postal Code:</b> " + data.orderpostalcode + "</p>"
                              + "</br><p><b> Product :</b> " + data.productname + "</p>"
-                             + "</br><p><b> Qty :</b> " + data.qty + "</p>"
+                             + "</br><p><b> Qty :</b> " + data.qty + " Tray</p>"
                              + "</br><p><b> Product Price:</b> " + data.productprice + "</p>"
                              + "</br><p><b> Delivery Charge:</b> " + data.deliverycharge + "</p>"
                              + "</br><p><b> Delivery Charge:</b> " + data.deliverycharge + "</p>"
-                             + "</br><p><b> Total Price:</b> " + data.totalprice + "</p>"
+                             + "</br><p><b> Total Price:</b> SGD " + data.totalprice + "</p>"
                              + "</br><p><b> Payment Type:</b> " +  data.paymenttype + "</p>"
                              + "</br><p><b> Schedule Delivery:</b> " +  delivery + "</p>"
 
                              + "<p></br><p><b></p>"
                              + "</br><p><b> Token:</b> " + stripetoken + "</p>"
-                             + "Thanks, Desibites";
+                             + "Thanks, Shelley Cupcakes";
 
                              send_mail( agentemail, subject, mailbody );
                              send_mail( officeremail, subject, mailbody );
