@@ -277,7 +277,7 @@
 
                           //console.log(res.productId);
                           $scope.data.productname = res.productName;
-                          $scope.data.qty = res.packetSize ;
+                          $scope.data.qty = 2;
                           $scope.data.productprice = res.productPrice ;
                            
                         }
