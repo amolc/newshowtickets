@@ -16,7 +16,6 @@
                         }else {
 
                          // console.log(res);
-
                           $scope.products = res ;
                           console.log($scope.products)
                         }
@@ -277,7 +276,7 @@
 
                           //console.log(res.productId);
                           $scope.data.productname = res.productName;
-                          $scope.data.qty = 2;
+                          $scope.data.qty = "2";
                           $scope.data.productprice = res.productPrice ;
                            
                         }
@@ -306,13 +305,19 @@
           //var baseurl = "http://128.199.230.90:5000/api/" ;
     });
 
-  if (document.location.hostname == "shelly.80startups.com")
+        if (document.location.hostname == "shelly.80startups.com")
           {
             var baseurl = "https://shelly.80startups.com/api/";
             app.config(['storeProvider', function (storeProvider) {
               storeProvider.setStore('sessionStorage');
             }]);
 
+          }else if(document.location.hostname == "www.shelleycupcakes.com"){
+            
+            var baseurl = "https://www.shelleycupcakes.com/api/";
+            app.config(['storeProvider', function (storeProvider) {
+              storeProvider.setStore('sessionStorage');
+            }]);
           }else{
 
             var baseurl = "http://localhost:6005/api/";
