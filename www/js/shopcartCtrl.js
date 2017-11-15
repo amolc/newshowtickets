@@ -28,7 +28,7 @@
      });
 
     app.controller('orderCtrl', function($scope, $http,$window,$location ,$sce, $timeout, store) {
-      $window.Stripe.setPublishableKey('pk_test_lTp89fhcIMVEFL2HSVRqJTHO');
+      $window.Stripe.setPublishableKey('pk_live_jkyEOI3O4ab2LXdgIevpM0Yz');
       //$window.Stripe.setPublishableKey('pk_live_325verdKtnzQhpKw10fVcXSU');
 
       $scope.redirect = function () {
