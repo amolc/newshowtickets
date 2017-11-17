@@ -37,7 +37,7 @@ app.post('/api/addbankorder', order.addbankorder);
 app.get('/api/get-data', order.getdata);
 app.get('/api/get-product-data/:id', order.getproductdata);
 
-app.listen(6005, function () {
-  console.log('CORS-enabled web server listening on port 6005')
+app.listen(9005, function () {
+  console.log('CORS-enabled web server listening on port 9005')
 })
-console.log("Magic at 6005");
+console.log("Magic at 9005");
