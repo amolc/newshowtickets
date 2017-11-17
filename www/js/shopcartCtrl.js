@@ -8,7 +8,7 @@
    app.controller('productCtrl', function($scope, $http,$window) {
 
       $scope.init = function() {
-              
+
 
               $http.get(baseurl + 'get-data/').success(function (res) {
                         if (res.status == 'false') {
@@ -23,7 +23,7 @@
                     });
           }
 
-    
+
 
      });
 
@@ -241,12 +241,12 @@
             $scope.data.schedulecharge = 0 ;
             $scope.data.totalprice = 0 ;
             $scope.data.productprice = 15 ;
-             if($scope.data.qty<=4){ 
-              $scope.data.deliverycharge = 10 ; 
-            } 
- 
-            /*if($scope.data.schedule!=="0"){ 
-              $scope.data.schedulecharge = 2 ; 
+             if($scope.data.qty<=4){
+              $scope.data.deliverycharge = 10 ;
+            }
+
+            /*if($scope.data.schedule!=="0"){
+              $scope.data.schedulecharge = 2 ;
             } */
             $scope.data.itemprice = $scope.data.qty*$scope.data.productprice;
             $scope.data.totalprice = $scope.data.itemprice+$scope.data.deliverycharge;
@@ -268,7 +268,7 @@
                    var urlparams = parts[1];
                    var urlpart = urlparams.split('&');
                    var productId = urlpart[0].split('=');
-  
+
                     $scope.productId= productId[1];
                     $http.get(baseurl + 'get-product-data/'+$scope.productId).success(function (res) {
                         if (res.status == 'false') {
@@ -278,16 +278,16 @@
                           $scope.data.productname = res.productName;
                           $scope.data.qty = "2";
                           $scope.data.productprice = res.productPrice ;
-                           
+
                         }
                     }).error(function () {
                     });
               }
 
-             
+
               $scope.data.paymenttype = "Credit Card";
-              $scope.data.deliverycharge = 10 ;              
-              $scope.data.totalprice = ($scope.data.productprice*$scope.data.qty)+$scope.data.deliverycharge ;              
+              $scope.data.deliverycharge = 10 ;
+              $scope.data.totalprice = ($scope.data.productprice*$scope.data.qty)+$scope.data.deliverycharge ;
               $scope.data.productsku = "0001";
               $scope.data.schedule = "0"
               $scope.data.schedulecharge = "0" ;
@@ -300,7 +300,7 @@
               $("#alertmessage").hide();
           }
 
-        
+
           //var baseurl = "http://localhost:5000/api/" ;
           //var baseurl = "http://128.199.230.90:5000/api/" ;
     });
@@ -312,9 +312,9 @@
               storeProvider.setStore('sessionStorage');
             }]);
 
-          }else if(document.location.hostname == "www.shelleycupcakes.com"){
-            
-            var baseurl = "https://www.shelleycupcakes.com/api/";
+          }else if(document.location.hostname == "www.shelleybakery.com"){
+
+            var baseurl = "https://www.shelleybakery.com/api/";
             app.config(['storeProvider', function (storeProvider) {
               storeProvider.setStore('sessionStorage');
             }]);
