@@ -8,7 +8,7 @@
 
 
 body{
-  font-family: 'Lato', sans-serif;
+ /* font-family: 'Lato', sans-serif;*/
 
 }
 input{
@@ -58,20 +58,11 @@ a, a:hover, a:active, a:focus{
   text-decoration: none;
   outline: none;
 }
-.blue-btn{
-  background-color: #314152;
-  padding: 10px 15px;
-  color: #ffffff;
-  border:1px solid #314152;
-}
 .modal-title{
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
   margin-bottom: 15px;
-}
-.bg-brown-blue{
-  background: #232d3a;
 }
 /*.section-title span{
   color: #42a17b;
@@ -221,7 +212,7 @@ a, a:hover, a:active, a:focus{
   color: #ffffff;
 }
 .bg-dark-gray{
-  background-color: #32a9b8 !important;
+  background-color: #314152 !important;
 }
 
 
@@ -306,7 +297,6 @@ a, a:hover, a:active, a:focus{
   border-radius: 0px;
   border: 0px;
   margin-left: -4px;
-  margin-top: -1px;
   height: 34px;
   color: #FFF;
 }
@@ -444,7 +434,7 @@ a, a:hover, a:active, a:focus{
   background: #fff;
 }
 .foot-wrap{
-  border: 2px solid #32a9b8;
+  border: 2px solid #314152;
   border-top: 0px;
   border-bottom-left-radius: 5 px;
   -webkit-border-bottom-left-radius: 5px;
@@ -505,7 +495,7 @@ a, a:hover, a:active, a:focus{
   margin-top: 7px;
 }
 .box-book-btn a{
-  background: #32a9b8;
+  background: #314152;
   width: 100%;
   padding: 10px;
   color: #ffffff;
@@ -760,7 +750,7 @@ a, a:hover, a:active, a:focus{
   text-align: center;
 }
 #footer-wrap{
-  background-color: #32a9b8;
+  background-color: #314152;
   padding: 50px 0px 30px;
 } 
 .foot-contact{
@@ -789,13 +779,13 @@ a, a:hover, a:active, a:focus{
   letter-spacing: 0.7px;
 }
 .footer-info a{
-  color: #32a9b8;
+  color: #e86100;
 }
-.social-wrap ul li{
+.footer-info .social-wrap ul li{
   width: 40px;
   height: 40px;
-  font-size: 20px;
-  line-height: 39px;
+  font-size: 18px;
+  line-height: 37px;
   margin-right: 15px;
   cursor: pointer;
 }
@@ -831,336 +821,6 @@ a, a:hover, a:active, a:focus{
 #header-wrap .navbar-default .navbar-nav.header-gray li a{
   color: #ffffff;
 }
-.static-banner{
-  position: relative;
-}
-.static-banner img{
-  width: 100%;
-  height: auto;
-  position: relative;
-}
-.banner-overlap{
-  position: absolute;
-  width: 100%;
-  top: 150px;
-  left: 0;
-}
-.banner-overlap .show-date{
-  float: right;
-}
-.banner-overlap .form-control{
-  border-radius: 0px;
-  border: 1px solid #e86100;
-  width: 200px;
-}
-.banner-overlap .show-date .form-control{
-  background: #ffffff url("../images/cal-icon.png") no-repeat 96% center;
-  background-size: 19px;
-  -webkit-background-size: 19px;
-  -moz-background-size: 19px;
-  -ms-background-size: 19px;
-  -o-background-size: 19px;
-}
-.banner-social-icon{
-  position: absolute;
-  right: 0;
-  top: 250px;
-}
-.inn-text-potition{
-  position: relative;
-}
-#film-static-banner{
-  padding: 0px;
-}
-.ctrmargin{
-  margin-top: 15px;    
-}
-#tickets-book-wrap{
-  background-color: #ffffff;
-}
-/*.film-details-list p{
-  display: table;
-}*/
-.film-details-list p span:first-child{
- /* width: 110px;*/
-}
-/*.film-details-list p span{
-  display: table-cell; 
-  text-align: left;
-}*/
-.film-details h4, .film-select-step h3{
-  font-family: 'Lato', sans-serif;
-  font-size: 22px;
-  margin-bottom: 10px;
-  font-weight: 600;
-}
-.film-details-list p{
-  font-family: 'Lato', sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 22px;
-}
-.step-box{
-  margin-bottom: 15px;
-  padding: 54px 15px;
-  cursor: pointer;
-}
-.step-box h4{
-  font-size: 18px;
-  color: #ffffff;
-  text-align: center;
-  font-family: 'Lato', sans-serif;
-  text-transform: uppercase;
-}
-.small-title{
-  font-family: 'Lato', sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-}
-.small-text{
-  font-size: 14px;
-  font-family: 'Lato', sans-serif;
-}
-.details-img span{
-  width: 100px;
-  height: auto;
-  display: inline-block;
-  margin-right: 10px;
-}
-.details-img img{
-  width: 100%;
-  margin-top: 10px;
-}
-.display-screen{
-  display: none;
-}
- 
-.seat {
-/*  float: left;
-  display: block;*/
-  margin: 5px 4px;
-  background: #c5c5c5;
-  width: 27px;
-  height: 27px;
-  border-radius: 2px;
-  cursor: pointer;
-}
-
-.seat-select {
-    display: none;
-}
-.seats{
-  list-style-type:upper-alpha;
-  width: 100%;
-}
-.seat-select:disabled+.seat{
-  background-color: red;
-  cursor: not-allowed;
-}
-
-.seat-select:checked+.seat {
-    background: #e96101;
-}
-.color-inticaters ul{
-  padding: 0px;
-  width: 81%;
-  margin: 34px auto;
-}
-.color-inticaters ul li{
-  list-style-type: none;
-  float: left;
-  position: relative;
-  margin-right: 24px;
-  padding-left: 22px;
-  line-height: 23px;
-  font-family: 'Lato', sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-}
-.color-inticaters ul li:before{
-  content: "";
-  display: block;
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  top: 0;
-  left: -10px;
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  background-color: #000;
-}
-.color-inticaters ul li:nth-child(4):before {
-    background: red;
-}
-.color-inticaters ul li:nth-child(1):before {
-    background: #c5c5c5;
-}
-.color-inticaters ul li:nth-child(2):before {
-    background: #636363;
-}
-.color-inticaters ul li:nth-child(3):before {
-    background: #e86100;
-}
-.tecket-wrap{
-  border: 1px solid #d2d2d2;
-  margin-top: 30px;
-  background-color: #ffffff;
-}
-.tecket-hedar, .tecket-foot{
-  padding: 20px 10px;
-}
-.tecket-wrap p{
-  font-size: 13px;
-  font-weight: 600;
-}
-.tickets-divider{
-  border: 0.5px dashed #d2d2d2;
-  position: relative;
-}
-.tickets-divider:after{
-  content: "";
-  width: 17px;
-  height: 5px;
-  display: block;
-  background-color: #d2d2d2;
-  position: absolute;
-  top: -3px;
-  left: 50%;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  margin-left: -15px;
-}
-.ticket-btn{
-  display: block;
-  padding: 10px;
-  background-color: #32a9b8;
-  text-align: center;
-  color: #ffffff;
-  font-family: 'Lato', sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-}
-.ticket-btn:hover{
-  color: #ffffff;
-}
-#reviews-wrap{
-  background-color: #edeff0;
-}
-.user-photo{
-  width: 50px;
-  height: 50px;
-  float: left;
-}
-.user-photo img{
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  overflow: hidden;
-}
-.user-name{
-  float: left;
-  margin-left: 10px;
-}
-.user-name h5{
-  font-size: 16px;
-  font-family: 'Lato', sans-serif;
-  color: #e96101;
-  font-weight: 600;
-  margin-top: 6px;
-}
-.user-name h5 span{
-  color: #6f6f6f;
-  margin-left: 10px;
-}
-.user-name p{
-  font-size: 14px;
-  font-family: 'Lato', sans-serif;
-  color: #314152;
-  font-weight: 600;
-  margin-top: 5px;
-}
-.reviews-list{
-  margin-top: 40px;
-}
-.form-control{
-  border-radius: 0%;
-  -webkit-border-radius: 0%;
-  -moz-border-radius: 0%;
-  -ms-border-radius: 0%;
-  -o-border-radius: 0%;
-}
-.film-details, .film-select-step{
-  padding: 16px;
-  background-color: #f0f0f0;
-  border-radius: 2px;
-  box-shadow: 0 1px 3px 0 #b9b7b7;
-}
-.film-select-step{
-  padding-bottom: 0px;
-}
-.sheet-list ul{
-  margin: 0px;
-  padding: 0px; 
-}
-.sheet-list ul li{
-  list-style-type: none;
-  padding: 10px;
-}
-.sheet-list ul li#seats{
-  position: relative;
-  padding: 3px 0px;
-  width: 500px;
-}
-.sheet-list ul li#seats .left-no,
-.sheet-list ul li#seats .right-no{
-  position: absolute;
-  top: 12px;
-}
-.sheet-list ul li#seats .left-no{
-  left: -15px;
-}
-.sheet-list ul li#seats .right-no{
-  right: -4px;
-}
-.seat:last-child{
-  margin-right: 0px;
-}
-.screen-wrap h5{
-  background: #32a9b8;
-  padding: 8px;
-  text-align: center;
-  margin: 0px 0px 15px;
-  color: #ffffff;
-  font-size: 18px;
-  width: 484px;
-}
-#screen-wrap{
-  padding: 0px;
-}
-.display-screen{
-  background-color: #232e3a;
-}
-#seats{
-  color: #ffffff;
-}
-.color-inticaters{
-  color: #ffffff;
-}
-.gallery
-{
-    display: inline-block;
-    margin-top: 20px;
-}
 
 
 
@@ -1170,9 +830,7 @@ a, a:hover, a:active, a:focus{
 
 
 
-.mr-t30{
-  margin-top: 30px;
-}
+
 @media (min-width: 1200px) {
   .nav-max-width{
     padding: 0px 80px;
