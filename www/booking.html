@@ -172,14 +172,43 @@
                     <h6 class="small-title">Photos/Videos : </h6>
                     <div class="details-img">
                       <span>
-                        <img src="images/fukrey-film.jpg" alt="yugpurush-mahatma" title="yugpurush mahatma">
+                        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=" " data-caption="" data-image="images/fukrey-film.jpg" data-target="#film-gallery">
+                          <img class="img-responsive" src="images/fukrey-film.jpg" alt="yugpurush-mahatma" title="yugpurush mahatma">
+                        </a>
                       </span>
-                       <span>
-                        <img src="images/fukrey-film.jpg" alt="yugpurush-mahatma" title="yugpurush mahatma">
+                      <span>
+                        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=" " data-caption=" " data-image="images/badshao-film.jpg" data-target="#film-gallery">
+                          <img class="img-responsive" src="images/badshao-film.jpg" alt="yugpurush-mahatma" title="yugpurush mahatma">
+                        </a>
                       </span>
-                       <span>
-                        <img src="images/fukrey-film.jpg" alt="yugpurush-mahatma" title="yugpurush mahatma">
-                      </span>
+
+
+                      <!-- LIGHT BOX HTML START HEAR -->
+                        <div class="modal fade" id="film-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <!-- <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                                        <h4 class="modal-title" id="image-gallery-title"></h4>
+                                    </div> -->
+                                    <div class="modal-body">
+                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                                        <img id="image-gallery-image" class="img-responsive" src="">
+                                    </div>
+                                    <div class="modal-footer">
+
+                                        <div class="col-md-2">
+                                            <button type="button" class="btn blue-btn" id="show-previous-image">Previous</button>
+                                        </div>
+                                        <div class="col-md-2 pull-right">
+                                            <button type="button" id="show-next-image" class="btn blue-btn">Next</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      <!-- LIGHT BOX HTML END HEAR -->
+                        
                     </div>
                   </div>
                 </div>
@@ -1306,6 +1335,12 @@
           </div>
         </div>
       </section>
+     
+      
+     
+       
+       
+       
       <div id="footer-wrap">
         <div class="container">
           <div class="row">
@@ -1410,11 +1445,12 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
     <script src="js/star-rating.js"></script>
     <script src="js/bootstrap-datepicker.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
     <script src="js/custom.js"></script>
+
+    
 
   </body>
 </html>

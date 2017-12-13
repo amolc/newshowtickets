@@ -64,6 +64,9 @@ a, a:hover, a:active, a:focus{
   color: #ffffff;
   border:1px solid #314152;
 }
+.blue-btn:hover{
+  color: #ffffff;
+}
 .modal-title{
   text-transform: uppercase;
   font-weight: 700;
@@ -902,7 +905,7 @@ a, a:hover, a:active, a:focus{
 }
 .step-box{
   margin-bottom: 15px;
-  padding: 54px 15px;
+  padding: 57px 15px;
   cursor: pointer;
 }
 .step-box h4{
@@ -929,10 +932,12 @@ a, a:hover, a:active, a:focus{
 }
 .details-img img{
   width: 100%;
-  margin-top: 10px;
 }
 .display-screen{
   display: none;
+}
+.details-img span{
+  margin-top: 10px;
 }
  
 .seat {
@@ -1161,9 +1166,30 @@ a, a:hover, a:active, a:focus{
     display: inline-block;
     margin-top: 20px;
 }
-
-
-
+#film-gallery .modal-body{
+  padding: 0px;
+}
+#film-gallery .modal-body button.close{
+  opacity: 1;
+}
+#film-gallery .modal-body button.close span{
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #ffffff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  opacity: 1;
+  line-height: 27px;
+}
+.thumbnail{
+  margin: 0px;
+}
 
 
 
@@ -1177,7 +1203,7 @@ a, a:hover, a:active, a:focus{
   .nav-max-width{
     padding: 0px 80px;
   }
-  .modal-dialog{
+  #signin-modal .modal-dialog{
     width: 340px;
     margin-top: 50px;
   }
