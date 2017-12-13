@@ -866,7 +866,7 @@ a, a:hover, a:active, a:focus{
 }
 .banner-social-icon{
   position: absolute;
-  right: 0;
+  right: 80px;
   top: 250px;
 }
 .inn-text-potition{
