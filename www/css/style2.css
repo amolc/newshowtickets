@@ -52,7 +52,7 @@ p{
   line-height: 20px;
 }
 section{
-  padding: 50px 0px;
+  padding: 30px 0px;
 }
 a, a:hover, a:active, a:focus{
   text-decoration: none;
@@ -351,6 +351,7 @@ a, a:hover, a:active, a:focus{
 }
 .cuntry-select {
   margin-top: 18px;
+  margin-left: 35px;
 }
 .cuntry-select .dropdown-menu>li>a{
   padding: 10px 10px;
@@ -544,7 +545,7 @@ a, a:hover, a:active, a:focus{
 .navbar-nav{
   margin: 0 auto;
   display: block;
-  width: 94%;
+  width: 93%;
   float: none;
 }
 .card {
@@ -1219,6 +1220,9 @@ a, a:hover, a:active, a:focus{
 }
 .booking-date-wrap .pl7{
   padding-left: 7px;
+}
+.cuntry-select button.pd-r0{
+  padding-left: 22px;
 }
 
 
