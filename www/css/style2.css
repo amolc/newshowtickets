@@ -235,7 +235,7 @@ a, a:hover, a:active, a:focus{
   left: 0;
   top: 0;
   background: #f7f7f7;
-  z-index: 999;
+  z-index: 100000;
 }
 #header-wrap .navbar{
   margin-bottom: 0px;
