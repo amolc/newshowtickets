@@ -1214,10 +1214,12 @@ a, a:hover, a:active, a:focus{
   margin: 0px;
 }
 
-
-
-/*DATE AND TIME CSS*/
-
+.booking-date-wrap .pr7{
+  padding-right: 7px;
+}
+.booking-date-wrap .pl7{
+  padding-left: 7px;
+}
 
 
 
