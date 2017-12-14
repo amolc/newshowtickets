@@ -867,7 +867,7 @@ a, a:hover, a:active, a:focus{
 .banner-social-icon{
   position: absolute;
   right: 80px;
-  top: 250px;
+  top: 130px;
 }
 .inn-text-potition{
   position: relative;
@@ -905,8 +905,31 @@ a, a:hover, a:active, a:focus{
 }
 .step-box{
   margin-bottom: 15px;
-  padding: 57px 15px;
+  padding: 46px 15px;
   cursor: pointer;
+  transition: all 0.2s linear 0.2s;
+  -webkit-transition: all 0.2s linear 0.2s;
+  -moz-transition: all 0.2s linear 0.2s;
+  -ms-transition: all 0.2s linear 0.2s;
+  -o-transition: all 0.2s linear 0.2s;
+}
+.step-box:hover{
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  box-shadow: 0 1px 3px 0 #b9b7b7;
+  -webkit-box-shadow: 0 1px 3px 0 #b9b7b7;
+  -moz-box-shadow: 0 1px 3px 0 #b9b7b7;
+  -ms-box-shadow: 0 1px 3px 0 #b9b7b7;
+  -o-box-shadow: 0 1px 3px 0 #b9b7b7;
+  transition: all 0.2s linear 0.2s;
+  -webkit-transition: all 0.2s linear 0.2s;
+  -moz-transition: all 0.2s linear 0.2s;
+  -ms-transition: all 0.2s linear 0.2s;
+  -o-transition: all 0.2s linear 0.2s;
+  background: #ef621a;
 }
 .step-box h4{
   font-size: 18px;
@@ -1190,6 +1213,11 @@ a, a:hover, a:active, a:focus{
 .thumbnail{
   margin: 0px;
 }
+
+
+
+/*DATE AND TIME CSS*/
+
 
 
 

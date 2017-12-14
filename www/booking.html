@@ -107,16 +107,6 @@
           <div class="banner-overlap">
             <div class="container-fluid nav-max-width">
               <div class="row">
-                <div class="show-date">
-                  <form>
-                    <div class="form-group">
-                        <input class="form-control" id="date" name="date"  placeholder="MM/DD/YYY" type="text"/>
-                    </div>
-                    <div class="form-group">
-                      <input class="form-control" id="date" name="date"  placeholder="MM/DD/YYY" type="text"/>
-                    </div>
-                  </form>
-                  </div>
                   <div class="clearfix"></div>
                   <div class="banner-social-icon">
                       <div class="social-wrap">
@@ -216,15 +206,10 @@
             </div>
             <div class="col-sm-4 col-md-4">
               <div class="film-select-step">
-                <h3 class="text-right">21 Oct 2017</h3>
-                <div class="well">
-                  <div id="datetimepicker3" class="input-append">
-                    <input data-format="hh:mm:ss" type="text"></input>
-                    <span class="add-on">
-                      <i data-time-icon="icon-time" data-date-icon="icon-calendar">
-                      </i>
-                    </span>
-                  </div>
+                <!-- <h3 class="text-right">21 Oct 2017</h3> -->
+                <div class="form-group">
+                  <label>Select Date</label>
+                  <input class="form-control" id="date" name="date"  placeholder="MM/DD/YYY" type="text"/>
                 </div>
                 <div class="select-step-boxes">
                   <div class="row">
@@ -1458,13 +1443,6 @@
     <script src="js/star-rating.js"></script>
     <script src="js/bootstrap-datepicker.min.js"></script>
     <script src="js/custom.js"></script>
-    <script type="text/javascript">
-      $(function() {
-        $('#datetimepicker3').datetimepicker({
-          pickDate: false
-        });
-      });
-    </script>
 
     
 
