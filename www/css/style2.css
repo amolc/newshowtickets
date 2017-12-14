@@ -380,7 +380,7 @@ a, a:hover, a:active, a:focus{
   width: 100%;
   left: 0px;
   z-index: 9;
-  bottom: -27px;
+  bottom: -28px;
 }
 .com-logo{
   width: 50px;
@@ -1208,7 +1208,7 @@ a, a:hover, a:active, a:focus{
     margin-top: 50px;
   }
   .container {
-    width: 960px;
+    width: 1060px;
   }
 }
  
