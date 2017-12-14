@@ -793,7 +793,7 @@ a, a:hover, a:active, a:focus{
   letter-spacing: 0.7px;
 }
 .footer-info a{
-  color: #32a9b8;
+  color: #ffffff;
 }
 .social-wrap ul li{
   width: 40px;
@@ -1215,10 +1215,10 @@ a, a:hover, a:active, a:focus{
   margin: 0px;
 }
 
-.booking-date-wrap .pr7{
+.pr7{
   padding-right: 7px;
 }
-.booking-date-wrap .pl7{
+.pl7{
   padding-left: 7px;
 }
 .cuntry-select button.pd-r0{
@@ -1236,6 +1236,7 @@ a, a:hover, a:active, a:focus{
 .pd-r0{
   padding-right: 0px;
 }
+.mr-b14{margin-bottom: 14px;}
 @media (min-width: 1200px) {
   .nav-max-width{
     padding: 0px 80px;
