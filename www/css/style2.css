@@ -59,10 +59,10 @@ a, a:hover, a:active, a:focus{
   outline: none;
 }
 .blue-btn{
-  background-color: #314152;
+  background-color: #ef621c;
   padding: 10px 15px;
   color: #ffffff;
-  border:1px solid #314152;
+  border:1px solid #ef621c;
 }
 .blue-btn:hover{
   color: #ffffff;
