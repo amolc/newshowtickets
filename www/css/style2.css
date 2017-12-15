@@ -863,14 +863,17 @@ a, a:hover, a:active, a:focus{
 }
 .banner-social-icon{
   position: absolute;
-  right: 80px;
-  top: 130px;
+  right: 20px;
+  bottom: 40px;
 }
 .inn-text-potition{
   position: relative;
 }
 #film-static-banner{
   padding: 0px;
+}
+#film-static-banner .container{
+  position: relative;
 }
 .ctrmargin{
   margin-top: 15px;    
@@ -988,20 +991,24 @@ a, a:hover, a:active, a:focus{
 }
 .color-inticaters ul{
   padding: 0px;
-  width: 81%;
-  margin: 34px auto;
+  width: 86%;
+  margin: 34px auto 10px;  
 }
 .color-inticaters ul li{
   list-style-type: none;
   float: left;
   position: relative;
-  margin-right: 24px;
+  margin-right: 16px;
   padding-left: 22px;
   line-height: 23px;
   font-family: 'Lato', sans-serif;
   font-size: 14px;
   font-weight: 600;
 }
+#platinum, #silver, #gold{
+  padding-top: 0px;
+}
+
 .color-inticaters ul li:before{
   content: "";
   display: block;
@@ -1202,13 +1209,14 @@ a, a:hover, a:active, a:focus{
   padding: 0px;
 }
 .display-screen{
-  background-color: #232e3a;
+  /*background-color: #232e3a;*/
 }
 #seats{
-  color: #ffffff;
+  color: #000000;
 }
 .color-inticaters{
-  color: #ffffff;
+  color: #000000;
+  margin-left: 49px;
 }
 .gallery
 {
@@ -1402,10 +1410,42 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dadee3', end
 .date-width{width: 60px !important;}
 .width-cvv{width: 100px !important;}
 #user-sign-wrap{
-  background-color: 
+  background-color: #f0f0f0;
 }
-
-         
+.sign-in-block{background-color: #ffffff;}
+.sign-form-header{
+  text-align: center; 
+  margin: 0px; 
+  font-size: 20px;
+  background-color: #32a9b8;
+  padding: 12px 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.sign-form-body .form-icon{
+  padding: 20px;
+}
+.sign-form-body .form-icon p{
+  font-size: 16px;
+  color: #000000;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+.screen-center{
+  width: 500px;
+  margin: 0 auto;
+}
+.screen-bg{
+  background-color: #f0f0f0;
+  box-shadow: 0 1px 3px 0 #b9b7b7;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+        
 
 
 
