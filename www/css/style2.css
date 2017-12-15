@@ -231,6 +231,14 @@ a, a:hover, a:active, a:focus{
 .bg-blue{
   background-color: #32a9b8;
 }
+.large-btn{
+  width: 100%;
+}
+.form-control{
+  height: 43px;
+  border-color: #324152;
+  color: #324152;
+}
 
 
 .mr-t15{ margin-top: 15px;}
@@ -320,8 +328,8 @@ a, a:hover, a:active, a:focus{
   border-radius: 0px;
   border: 0px;
   margin-left: -4px;
-  margin-top: -1px;
-  height: 34px;
+  margin-top: 0px;
+  height: 43px;
   color: #FFF;
 }
 .navbar-form:hover .serch-btn{
@@ -362,14 +370,14 @@ a, a:hover, a:active, a:focus{
 }
 .cuntry-select {
   margin-top: 18px;
-  margin-left: 35px;
+ /* margin-left: 35px;*/
 }
 .cuntry-select .dropdown-menu>li>a{
   padding: 10px 10px;
   font-family: 'Lato', sans-serif;
 }
 .cuntry-select .dropdown-menu>li>a:hover{
-  background-color: #2a68b5;
+  background-color: #32a9b8;
   color: #ffffff;
 }
 .cuntry-select .open>.dropdown-menu{
@@ -378,6 +386,17 @@ a, a:hover, a:active, a:focus{
 }
 .cuntry-select .dropdown-menu>li>a img{
   margin-right: 10px;
+}
+.cuntry-select .open>.dropdown-menu:before{
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 8px solid #ffffff;
+  position: absolute;
+  top: -8px;
+  left: 20px;
 }
 .user-drop .caret{
   vertical-align: text-top;
@@ -1416,24 +1435,71 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dadee3', end
 #user-sign-wrap{
   background-color: #f0f0f0;
 }
-.sign-in-block{background-color: #ffffff;}
+.sign-in-block{
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px 0 #b9b7b7;
+  -webkit-box-shadow: 0 1px 3px 0 #b9b7b7;
+  -moz-box-shadow: 0 1px 3px 0 #b9b7b7;
+  -ms-box-shadow: 0 1px 3px 0 #b9b7b7;
+  -o-box-shadow: 0 1px 3px 0 #b9b7b7;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  width: 490px;
+  margin: 0 auto;
+}
 .sign-form-header{
   text-align: center; 
   margin: 0px; 
-  font-size: 20px;
   background-color: #32a9b8;
   padding: 12px 15px;
   color: #ffffff;
   text-transform: uppercase;
 }
+.sign-form-header h5{
+  font-size: 22px;
+  font-weight: 600;
+  font-family: 'Lato', sans-serif;
+}
 .sign-form-body .form-icon{
-  padding: 20px;
+  padding: 40px 40px 50px;
+  border-bottom: 2px solid #32a9b8;
+  position: relative;
+}
+.form-icon:after{
+  content: "OR";
+  display: block;
+  background-color: #fff;
+  color: #000;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: -21px;
+  left: 50%;
+  border-radius: 50%;
+  border: 2px solid #32a9b8;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 34px;
+  text-align: center;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.sign-form-body .form-icon .social-wrap ul{
+  margin: 31px auto 0px;
+  padding: 0px;
+  width: 95px;
 }
 .sign-form-body .form-icon p{
-  font-size: 16px;
+  font-size: 21px;
   color: #000000;
   font-family: 'Lato', sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   text-align: center;
 }
 .screen-center{
@@ -1459,6 +1525,36 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dadee3', end
 #past-gallery{
   padding-top: 10px;
 }
+.form-filds.pd40{
+  padding: 60px 67px 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .mr-t30{
   margin-top: 30px;
