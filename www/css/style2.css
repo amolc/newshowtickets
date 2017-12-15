@@ -226,6 +226,9 @@ a, a:hover, a:active, a:focus{
 .bg-dark-gray{
   background-color: #32a9b8 !important;
 }
+.bg-blue{
+  background-color: #32a9b8;
+}
 
 
 .mr-t15{ margin-top: 15px;}
@@ -821,9 +824,7 @@ a, a:hover, a:active, a:focus{
 .bg-none{
   background-color: transparent !important;
 }
-.bg-blue{
-  background-color: #0b65b1 !important;
-}
+
 .border-blue{
   border-color: #0b65b1 !important;
 }
@@ -1111,7 +1112,8 @@ a, a:hover, a:active, a:focus{
   vertical-align: middle;
 }
 #reviews-wrap{
-  background-color: #edeff0;
+  /*background-color: #edeff0;*/
+  padding-top: 10px;
 }
 .user-photo{
   width: 50px;
@@ -1445,8 +1447,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dadee3', end
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
 }
-        
 
+.collapse.in, .collapse-tab{
+  display: block !important;
+}
+#pyement-wrap .activet-panel.panel-title a{
+  color: #ffffff;
+}
 
 
 
