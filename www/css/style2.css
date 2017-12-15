@@ -162,6 +162,7 @@ a, a:hover, a:active, a:focus{
 /*padding top*/
 .pd-t0{padding-top: 0px !important;}
 .pd-t10{padding-top: 10px;}
+.pd-t15{padding-top: 15px;}
 .pd-t20{padding-top: 20px;}
 .pd-t30{padding-top: 30px;}
 .pd-t40{padding-top: 40px;}
@@ -188,6 +189,7 @@ a, a:hover, a:active, a:focus{
 /*padding bottom*/
 .pd-b0{padding-bottom: 0px !important;}
 .pd-b10{padding-bottom: 10px;}
+.pd-b15{padding-bottom: 15px;}
 .pd-b20{padding-bottom: 20px;}
 .pd-b30{padding-bottom: 30px;}
 .pd-b40{padding-bottom: 40px;}
@@ -1453,6 +1455,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dadee3', end
 }
 #pyement-wrap .activet-panel.panel-title a{
   color: #ffffff;
+}
+#past-gallery{
+  padding-top: 10px;
 }
 
 
