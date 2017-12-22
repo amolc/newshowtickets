@@ -1698,7 +1698,8 @@ label.cos-checkbox{
 #datatable_filter{
   float: right;
 }
-.form-inline .form-control{
+#datatable_filter .form-control{
   margin-left: 6px;
   margin-right: 6px;
+  height: 30px;
 }
