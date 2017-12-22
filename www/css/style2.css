@@ -1670,3 +1670,28 @@ label.cos-checkbox{
   }
 }
  
+/*data-table-css*/
+.table.dataTable thead .sorting, table.dataTable thead .sorting_asc{
+  background-image: none;
+}
+.table.dataTable thead th{
+  font-size: 14px;
+  padding: 10px 4px;
+  vertical-align: middle;
+}
+.table.dataTable tbody td{
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+}
+.table-striped tbody tr:nth-of-type(odd){
+  background-color: #f3feff;
+}
+.pagination>.active>a, 
+.pagination>.active>a:focus, 
+.pagination>.active>a:hover, 
+.pagination>.active>span, 
+.pagination>.active>span:focus, 
+.pagination>.active>span:hover{
+  background-color: #32a9b8;
+  border-color: #32a9b8;
+}
