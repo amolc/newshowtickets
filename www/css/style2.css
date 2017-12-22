@@ -1695,3 +1695,10 @@ label.cos-checkbox{
   background-color: #32a9b8;
   border-color: #32a9b8;
 }
+#datatable_filter{
+  float: right;
+}
+.form-inline .form-control{
+  margin-left: 6px;
+  margin-right: 6px;
+}
