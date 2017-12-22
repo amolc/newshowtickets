@@ -1697,9 +1697,13 @@ label.cos-checkbox{
 }
 #datatable_filter{
   float: right;
+  display: none;
 }
 #datatable_filter .form-control{
   margin-left: 6px;
   margin-right: 6px;
   height: 30px;
+}
+.dataTables_length{
+  display: none;
 }
