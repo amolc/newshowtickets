@@ -1733,6 +1733,8 @@ label.cos-checkbox{
   .cuntry-select .btn .caret{margin-top: 4px;}
   .cuntry-select .dropdown-menu{margin-left: -50px;}
   .cuntry-select .open>.dropdown-menu:before{left: 72px;}
+  #header-wrap .navbar-default .navbar-nav li{padding: 5px 0px; border-bottom: 1px solid #41aebb; text-align: center;}
+  #header-wrap .navbar-default .navbar-nav li a{border-right: 0px;}
 }
 @media (min-width:768px) and (max-width: 968px) {
 
