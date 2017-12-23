@@ -1714,6 +1714,7 @@ label.cos-checkbox{
 
 /*Responsive Css Start */
 @media (max-width: 767px) {
+  section {padding: 20px 0px;}
   .logo-img img{width: 128px;} 
   #header-wrap .col-sm-8.pd-l30{padding-left: 0px;}
   .xs-navbar{position: absolute; right: 0px; top: 0px; width: 100%; background: #32a9b8;}
@@ -1737,6 +1738,10 @@ label.cos-checkbox{
   #header-wrap .navbar-default .navbar-nav li a{border-right: 0px; font-size: 15px;}
   #banner-wrap{padding: 50px 0px 0px;}
   .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .icon-next{font-size: 12px;}
+  .sectin-title{font-size: 18px;}
+  .serch-wrap{position: relative;}
+  .serch-wrap .form-control{height: 30px;}
+  .serch-wrap .serch-btn{position: absolute; top: 1px; right: 16px; height: 30px; width: 33px;}
 }
 @media (min-width:768px) and (max-width: 968px) {
 
