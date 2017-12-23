@@ -1707,3 +1707,16 @@ label.cos-checkbox{
 .dataTables_length{
   display: none;
 }
+
+
+
+
+
+/*Responsive Css Start */
+
+@media (max-width: 767px) {
+  .logo-img img{width: 130px;}  
+}
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
+@media (min-width: @screen-lg-min) { ... }
