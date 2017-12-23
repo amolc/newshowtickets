@@ -1713,10 +1713,33 @@ label.cos-checkbox{
 
 
 /*Responsive Css Start */
-
 @media (max-width: 767px) {
-  .logo-img img{width: 130px;}  
+  .logo-img img{width: 128px;} 
+  #header-wrap .col-sm-8.pd-l30{padding-left: 0px;}
+  .xs-navbar{position: absolute; right: 0px; top: 0px; width: 100%; background: #32a9b8;}
+  #header-wrap .navbar-toggle{margin-top: 12px; padding: 6px 6px; background: #fff; border-color: #ffffff;}
+  .navbar-default .navbar-toggle .icon-bar{background-color: #32a9b8;}
+  #header-wrap .navbar-default .navbar-collapse, 
+  #header-wrap .navbar-default .navbar-form{background-color: #32a9b8;}
+  .logo-img{position: relative; z-index: 999;}
+  .logo-img img{margin-top: 5px;}
+  .xs-header{background: #32a9b8; padding: 10px 15px;}
+  #header-wrap.bg-dark-gray{background-color: transparent !important;}
+  .cuntry-select .col-sm-5.col-xs-5{width: 70px; position: absolute; top: -37px; right: 139px;}
+  .cuntry-select .col-sm-4.col-xs-4{width: 53px; position: absolute; top: -35px; right: 76px;}
+  .cuntry-select button.pd-r0{padding-left: 0px;}
+  .cuntry-select{margin-top: 0px;}
+  .xs-icon-header{background: #edeff0;}
+  .cuntry-select .btn .caret{margin-top: 4px;}
+  .cuntry-select .dropdown-menu{margin-left: -50px;}
+  .cuntry-select .open>.dropdown-menu:before{left: 70px;}
 }
-@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
-@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
-@media (min-width: @screen-lg-min) { ... }
+@media (min-width:768px) and (max-width: 968px) {
+
+}
+@media (min-width: 1025px) and (max-width: 1199px) {
+
+}
+@media (min-width: 1200px) {
+
+}
