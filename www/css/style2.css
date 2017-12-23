@@ -1736,6 +1736,7 @@ label.cos-checkbox{
   #header-wrap .navbar-default .navbar-nav li{padding: 5px 0px; border-bottom: 1px solid #41aebb; text-align: center;}
   #header-wrap .navbar-default .navbar-nav li a{border-right: 0px; font-size: 15px;}
   #banner-wrap{padding: 50px 0px 0px;}
+  .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .icon-next{font-size: 12px;}
 }
 @media (min-width:768px) and (max-width: 968px) {
 
