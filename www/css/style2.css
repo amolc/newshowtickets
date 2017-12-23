@@ -1732,7 +1732,7 @@ label.cos-checkbox{
   .xs-icon-header{background: #edeff0;}
   .cuntry-select .btn .caret{margin-top: 4px;}
   .cuntry-select .dropdown-menu{margin-left: -50px;}
-  .cuntry-select .open>.dropdown-menu:before{left: 63px;}
+  .cuntry-select .open>.dropdown-menu:before{left: 72px;}
 }
 @media (min-width:768px) and (max-width: 968px) {
 
