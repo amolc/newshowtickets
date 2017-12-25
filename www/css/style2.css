@@ -1819,7 +1819,143 @@ label.cos-checkbox{
 
 }
 @media (min-width:768px) and (max-width: 991px) {
-
+  .logo-img img{width: 128px;} 
+  .xs-center{text-align: center;}
+  #header-wrap .col-sm-8.pd-l30{padding-left: 0px;}
+  .xs-navbar{position: absolute; right: 0px; top: 0px; width: 100%; background: #32a9b8;}
+  #header-wrap .navbar-toggle{margin-top: 12px; padding: 6px 6px; background: #fff; border-color: #ffffff;}
+  .navbar-default .navbar-toggle .icon-bar{background-color: #32a9b8;}
+  #header-wrap .navbar-default .navbar-collapse, 
+  #header-wrap .navbar-default .navbar-form{background-color: #32a9b8;}
+  .logo-img{position: relative; z-index: 999;}
+  .logo-img img{margin-top: 5px;}
+  .xs-header{background: #32a9b8; padding: 10px 15px;}
+  #header-wrap.bg-dark-gray{background-color: transparent !important;}
+  .cuntry-select .col-sm-5.col-xs-5{width: 70px; position: absolute; top: -37px; right: 110px;}
+  .cuntry-select .col-sm-4.col-xs-4{width: 53px; position: absolute; top: -35px; right: 62px;}
+  .cuntry-select button.pd-r0{padding-left: 0px;}
+  .cuntry-select{margin-top: 0px;}
+  .xs-icon-header{background: #edeff0;}
+  .cuntry-select .btn .caret{margin-top: 4px;}
+  .cuntry-select .dropdown-menu{margin-left: -50px;}
+  .cuntry-select .open>.dropdown-menu:before{left: 72px;}
+  #header-wrap .navbar-default .navbar-nav li{padding: 5px 0px; border-bottom: 1px solid #41aebb; text-align: center;}
+  #header-wrap .navbar-default .navbar-nav li a{border-right: 0px; font-size: 15px;}
+  #banner-wrap{padding: 50px 0px 0px;}
+  .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .icon-next{font-size: 12px;}
+  #upcoming-events-wrap .sectin-title{margin-top: 6px; }
+  .sectin-title{font-size: 20px;}
+  .serch-wrap{position: relative;}
+  .serch-wrap .form-control{height: 30px;}
+  .serch-wrap .serch-btn{position: absolute; top: 1px; right: 16px; height: 30px; width: 33px;}
+  .film-title h6{font-size: 16px; line-height: 20px; margin-bottom: 0px;}
+  .social-wrap ul li{width: 30px; height: 30px; font-size: 15px; line-height: 31px; margin-right: 6px;}
+  .box-book-btn a{padding: 7px; font-size: 15px;}
+  .film-promo-box{margin-bottom: 15px;}
+  #featured-events-wrap .col-sm-12.mr-b30{margin-bottom: 15px;}
+  #featured-events-wrap{padding-bottom: 10px !important;}
+  #footer-wrap{padding: 30px 0px;}
+  .footer-info{margin-bottom: 20px;}
+  #footer-wrap .mr-b10{margin-bottom: 0px;}
+  .footer-info.pd-l30{padding-left: 0px;}
+  .foot-title{font-size: 17px;}
+  #foot-strip p{font-size: 13px;}
+  #film-static-banner{padding: 50px 0px 0px;}
+  .banner-social-icon{bottom: 10px;}
+  .film-details h4, .film-select-step h3{font-size: 17px;}
+  .small-title{font-size: 16px;}
+  .film-details, .film-select-step{margin-bottom: 20px;}
+  .booking-date-wrap .col-sm-6.col-md-6.pr7{ padding-right: 15px; margin-bottom: 15px;}
+  .booking-date-wrap .col-sm-6.col-md-6.pl7{margin-bottom: 15px;}
+  .booking-date-wrap .pull-right{float: none !important;}
+  .co-sm-6.col-md-6.pr7{padding-right: 15px;}
+  .col-sm-6.col-md-6.pl7{padding-left: 15px;}
+  .screen-bg.pd40{padding: 20px; margin-bottom: 20px;}
+  #reviews-wrap{padding: 0px 0px 0px;}
+  .comment-box-wrap.mr-t50{margin-top: 20px;}
+  .pyement-form .form-group{margin-bottom: 15px;}
+  .form-inline .form-group{display: block;}
+  .panel-body {padding: 15px 15px 0;}
+  .debit-info{width: 100%;}
+  .date-width{float: left;}
+  .debit-info .form-group{margin-bottom: 0px;}
+  .horizantal-tabs .tab-pane{padding: 20px 0px;}
+  .tecket-midddle table tr td select{width: 60px;}
+  #pyement-wrap{padding-top: 20px;}
+  .btn{font-size: 13px;}
+  .xs-table-responsive{min-height: .01%; overflow-x: auto;}
+  .col-sm-12.col-md-12.pd0{padding: 0px 15px;}
+  #book-history-wrap{padding: 30px 0px 30px;}
+  .user-history h5{font-size: 18px; text-align: left; margin: -3px 0px 10px; text-align: right;}
+  .table-head{padding: 2px 0px;}
+  .user-history img{top: 6px; left: 18px;}
+  .user-history span{font-size: 18px; float: right; line-height: 47px; text-transform: uppercase;}
+  .sub-heading{font-size: 18px;}
+  div.dataTables_paginate, 
+  div.dataTables_length, 
+  div.dataTables_filter, 
+  div.dataTables_info, 
+  div.dataTables_paginate{text-align: right;}
+  .sign-in-block{width: 100%;}
+  .form-filds.pd30{padding: 20px 0px;}
+  .form-group.mr-b30{margin-bottom: 20px;}
+  .pr7{padding-right: 15px;}
+  .pl7{padding-left: 15px;}
+  label.cos-checkbox{line-height: 14px;}
+  .history-table .horizantal-tabs .tab-pane{padding: 20px 0px 0px;}
+  .form-filds.pd50{padding: 20px 15px;}
+  .gallery-photos{margin-top: 15px;}
+  #tickets-book-wrap{padding-bottom: 0px;}
+  #past-gallery{padding: 0px 0px 20px;}
+  .sign-form-body .form-icon{padding: 20px 20px 30px;}
+  .sign-form-body .form-icon .social-wrap ul{width: 66px; margin: 15px auto 0px;}
+  .form-icon:after{width: 30px; height: 30px; bottom: -16px; font-size: 11px; line-height: 27px;}
+  .sign-in-block .form-filds.pd40{padding: 30px 20px 20px;}
+  .sign-in-block .text-center.mr-t40{margin-top: 10px;}
+  .sign-form-header h5{font-size: 18px;}
+  .sign-form-body .form-icon p{font-size: 16px;}
+  .step-box{padding: 26px 15px;}
+  .select-step-boxes .pr7{padding-right: 7px !important;}
+  .select-step-boxes .pl7{padding-left: 7px !important;}
+  .modal-footer{padding: 10px 0px;}
+  #pyement-wrap, #platinum, #gold, #silver{padding-bottom: 20px;}
+}
+@media (max-width: 991px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in { 
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
 }
 @media (min-width:992px) and (max-width: 1024px) {
 
