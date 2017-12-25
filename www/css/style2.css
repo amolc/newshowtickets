@@ -1756,6 +1756,7 @@ label.cos-checkbox{
   #film-static-banner{padding: 50px 0px 0px;}
   .banner-social-icon{bottom: 10px;}
   .film-details h4, .film-select-step h3{font-size: 17px;}
+  .small-title{font-size: 10px;}
 }
 @media (min-width:768px) and (max-width: 968px) {
 
