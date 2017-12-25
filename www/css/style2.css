@@ -1777,6 +1777,9 @@ label.cos-checkbox{
   .tecket-midddle table tr td select{width: 60px;}
   #pyement-wrap{padding-top: 20px;}
   .btn{font-size: 13px;}
+  .xs-table-responsive{min-height: .01%; overflow-x: auto;}
+  .col-sm-12.col-md-12.pd0{padding: 0px 15px;}
+  #book-history-wrap{padding: 40px 0px 30px;}
 
 }
 @media (min-width:768px) and (max-width: 968px) {
