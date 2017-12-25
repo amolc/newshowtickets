@@ -1775,6 +1775,7 @@ label.cos-checkbox{
   .debit-info .form-group{margin-bottom: 0px;}
   .horizantal-tabs .tab-pane{padding: 20px 0px;}
   .tecket-midddle table tr td select{width: 60px;}
+  #pyement-wrap{padding-top: 20px;}
 
 }
 @media (min-width:768px) and (max-width: 968px) {
