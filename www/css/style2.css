@@ -1786,6 +1786,11 @@ label.cos-checkbox{
   .table-head{padding: 10px 0px;}
   .user-history img{width: 50px; height: 50px; position: static;}
   .user-history span{font-size: 18px; float: right; line-height: 47px; text-transform: uppercase;}
+  div.dataTables_paginate, 
+  div.dataTables_length, 
+  div.dataTables_filter, 
+  div.dataTables_info, 
+  div.dataTables_paginate{text-align: right;}
 
 }
 @media (min-width:768px) and (max-width: 968px) {
