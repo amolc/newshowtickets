@@ -1818,7 +1818,7 @@ label.cos-checkbox{
   #pyement-wrap, #platinum, #gold, #silver{padding-bottom: 20px;}
 
 }
-@media (min-width:768px) and (max-width: 1024px) {
+@media (min-width:768px) and (max-width: 991px) {
   .logo-img img{width: 128px;} 
   .xs-center{text-align: center;}
   .xs-navbar{position: absolute; right: 0px; top: 0px; width: 100%; background: #32a9b8;}
@@ -1830,8 +1830,8 @@ label.cos-checkbox{
   .logo-img img{margin-top: 5px;}
   .xs-header{background: #32a9b8; padding: 10px 15px;}
   #header-wrap.bg-dark-gray{background-color: transparent !important;}
-  .cuntry-select .col-sm-5.col-xs-5{width: 70px; position: absolute; top: -27px; right: 110px;}
-  .cuntry-select .col-sm-4.col-xs-4{width: 53px; position: absolute; top: -24px; right: 62px;}
+  .cuntry-select .col-sm-5.col-xs-5{width: 70px; position: absolute; top: -37px; right: 134px;}
+  .cuntry-select .col-sm-4.col-xs-4{width: 53px; position: absolute; top: -34px; right: 68px;}
   .cuntry-select button.pd-r0{padding-left: 0px;}
   .cuntry-select{margin-top: 0px;}
   .xs-icon-header{background: #edeff0;}
