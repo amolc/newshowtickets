@@ -1865,11 +1865,7 @@ label.cos-checkbox{
   .film-details h4, .film-select-step h3{font-size: 17px;}
   .small-title{font-size: 16px;}
   .film-details, .film-select-step{margin-bottom: 20px;}
-  .booking-date-wrap .col-sm-6.col-md-6.pr7{ padding-right: 15px; margin-bottom: 15px;}
-  .booking-date-wrap .col-sm-6.col-md-6.pl7{margin-bottom: 15px;}
   .booking-date-wrap .pull-right{float: none !important;}
-  .co-sm-6.col-md-6.pr7{padding-right: 15px;}
-  .col-sm-6.col-md-6.pl7{padding-left: 15px;}
   .screen-bg.pd40{padding: 20px; margin-bottom: 20px;}
   #reviews-wrap{padding: 0px 0px 0px;}
   .comment-box-wrap.mr-t50{margin-top: 20px;}
@@ -1899,8 +1895,6 @@ label.cos-checkbox{
   .sign-in-block{width: 100%;}
   .form-filds.pd30{padding: 20px 0px;}
   .form-group.mr-b30{margin-bottom: 20px;}
-  .pr7{padding-right: 15px;}
-  .pl7{padding-left: 15px;}
   label.cos-checkbox{line-height: 14px;}
   .history-table .horizantal-tabs .tab-pane{padding: 20px 0px 0px;}
   .form-filds.pd50{padding: 20px 15px;}
@@ -1914,9 +1908,6 @@ label.cos-checkbox{
   .sign-in-block .text-center.mr-t40{margin-top: 10px;}
   .sign-form-header h5{font-size: 18px;}
   .sign-form-body .form-icon p{font-size: 16px;}
-  .step-box{padding: 26px 15px;}
-  .select-step-boxes .pr7{padding-right: 7px !important;}
-  .select-step-boxes .pl7{padding-left: 7px !important;}
   .modal-footer{padding: 10px 0px;}
   #pyement-wrap, #platinum, #gold, #silver{padding-bottom: 20px;}
   .sm-full-width{width: 100%;}
