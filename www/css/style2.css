@@ -1767,7 +1767,7 @@ label.cos-checkbox{
   .booking-date-wrap .pull-right{float: none !important;}
   .co-sm-6.col-md-6.pr7{padding-right: 15px;}
   .col-sm-6.col-md-6.pl7{padding-left: 15px;}
-  .screen-bg.pd40{padding: 20px;}
+  .screen-bg.pd40{padding: 20px; margin-bottom: 20px;}
   #reviews-wrap{padding: 0px 0px 30px;}
   .comment-box-wrap.mr-t50{margin-top: 20px;}
   .pyement-form .form-group{margin-bottom: 15px;}
@@ -1787,6 +1787,7 @@ label.cos-checkbox{
   .table-head{padding: 2px 0px;}
   .user-history img{top: 6px; left: 18px;}
   .user-history span{font-size: 18px; float: right; line-height: 47px; text-transform: uppercase;}
+  .sub-heading{font-size: 18px;}
   div.dataTables_paginate, 
   div.dataTables_length, 
   div.dataTables_filter, 
@@ -1814,7 +1815,7 @@ label.cos-checkbox{
   .select-step-boxes .pr7{padding-right: 7px !important;}
   .select-step-boxes .pl7{padding-left: 7px !important;}
   .modal-footer{padding: 10px 0px;}
-  #pyement-wrap{padding-bottom: 20px;}
+  #pyement-wrap, #platinum, #gold, #silver{padding-bottom: 20px;}
 
 }
 @media (min-width:768px) and (max-width: 968px) {
