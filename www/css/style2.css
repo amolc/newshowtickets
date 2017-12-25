@@ -1781,7 +1781,7 @@ label.cos-checkbox{
   .btn{font-size: 13px;}
   .xs-table-responsive{min-height: .01%; overflow-x: auto;}
   .col-sm-12.col-md-12.pd0{padding: 0px 15px;}
-  #book-history-wrap{padding: 40px 0px 30px;}
+  #book-history-wrap{padding: 30px 0px 30px;}
   .user-history h5{font-size: 18px; text-align: left; margin: 10px 0px; text-align: center;}
   .table-head{padding: 10px 0px;}
   .user-history img{width: 50px; height: 50px; position: static;}
@@ -1798,6 +1798,7 @@ label.cos-checkbox{
   .pl7{padding-left: 15px;}
   label.cos-checkbox{line-height: 14px;}
   .history-table .horizantal-tabs .tab-pane{padding: 20px 0px 0px;}
+  .form-filds.pd50{padding: 20px 15px;}
 
 }
 @media (min-width:768px) and (max-width: 968px) {
