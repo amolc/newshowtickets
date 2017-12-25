@@ -1812,6 +1812,7 @@ label.cos-checkbox{
   .step-box{padding: 26px 15px;}
   .select-step-boxes .pr7{padding-right: 7px !important;}
   .select-step-boxes .pl7{padding-left: 7px !important;}
+  .modal-footer{padding: 10px 0px;}
 
 }
 @media (min-width:768px) and (max-width: 968px) {
