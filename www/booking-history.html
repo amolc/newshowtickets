@@ -32,17 +32,17 @@
     <![endif]-->
   </head>
   <body>
-       <header id="header-wrap" class="bg-dark-gray">
+      <header id="header-wrap" class="bg-dark-gray">
       <div class="container">
         <div class="row">
-          <div class="col-sm-2 col-xs-6">
+          <div class="col-sm-3 col-md-2 col-xs-6">
             <div class="logo-img">
               <a href="index.html">
                 <img src="images/logo-white.png" alt="showtickets" title="Showtickets" class="img-responsive">
               </a>
             </div>
           </div>
-          <div class="col-sm-8 pd-l30 xs-navbar">
+          <div class="col-sm-7 col-md-8 pd-l30 xs-navbar sm-full-width">
             <div class="nav-wrap">
               <nav class="navbar navbar-default">
                   <div class="container-fluid pd0">
@@ -73,9 +73,9 @@
                 </nav>
             </div>
           </div>
-          <div class="col-sm-2 col-xs-12">
+          <div class="col-sm-2 col-md-2 col-xs-12 sm-full-width">
             <div class="cuntry-select">
-              <div class="col-sm-5 col-xs-5 pd0">
+              <div class="col-sm-5 col-md-5 col-xs-5">
                 <div class="dropdown">
                   <!-- <button class="btn btn-default dropdown-toggle user-drop" type="button" data-toggle="modal" data-target="#signin-modal"> -->
                   <button class="btn btn-default dropdown-toggle user-drop" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -90,7 +90,7 @@
                     </ul>
                 </div>
               </div>
-              <div class="col-sm-4 col-xs-4 pd0">
+              <div class="col-sm-4 col-md-4 col-xs-4 pd0">
                 <div class="dropdown">
                   <button class="btn btn-default dropdown-toggle pd-r0" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                     <img src="images/ind-flag.png" alt="" title="">
@@ -352,7 +352,100 @@
           </div>
         </div>
       </div>
-
+<div id="footer-wrap">
+        <div class="container">
+          <div class="row">
+             <div class="col-sm-4">
+                <div class="footer-info">
+                  <h3 class="foot-title">Contacts</h3>
+                  <h5 class="mr-b10">Address:</h5>
+                  <p class="mr-b10">20 Maxwell Road, Singapore 069113</p>
+                  <p class="mr-b10">Phone : <a href="tel:#">+65 9113 1667</a></p>
+                  <p>Email : <a href="mailto:#">contact@pinnacle.sg</a></p>
+                </div>
+             </div>
+             <div class="col-sm-5">
+              <div class="footer-info">
+                <h3 class="foot-title">Overview</h3>
+                <p class="mr-b10"><strong>ONE PLATFORM FOR ALL YOUR<br> ENTERTAINMENT NEEDS</strong></p>
+                <p>ShowTickets.asia is established to provide a ticketing platform and solution for events in Singapore. It offers a platform for events such as theatre productions, concerts, exhibitions, seminars, sports etc.</p>
+              </div>
+             </div>
+             <div class="col-sm-3">
+              <div class="footer-info pd-l30">
+                <h3 class="foot-title">Social Links</h3>
+                  <div class="social-wrap">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-google-plus" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer id="foot-strip">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <p>© ShowTickets.asia 2017 - All Rights Reserved.</p>
+              </div>
+              <!-- <div class="col-sm-6">
+                <p>Powered by V K GROUP</p>
+              </div> -->
+            </div>
+          </div>
+        </footer>
+ 
+      <!-- MODAL -->
+      <!-- Modal -->
+      <div class="modal fade" id="signin-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="card card-container">
+              <h4 class="modal-title">Sign In</h4>
+            <!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> -->
+            <img id="profile-img" class="profile-img-card" src="images/user-img.png" />
+            <!-- <p id="profile-name" class="profile-name-card"></p> -->
+              <form class="form-signin">
+                  <span id="reauth-email" class="reauth-email"></span>
+                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                  <div id="remember" class="checkbox">
+                      <label>
+                          <input type="checkbox" value="remember-me"> Remember me
+                      </label>
+                  </div>
+                  <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign in</button>
+              </form><!-- /form -->
+              <div class="col-sm-12 text-center">
+                <a href="#" class="forgot-password">
+                  Forgot the password?
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
 
