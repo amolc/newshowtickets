@@ -1528,9 +1528,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dadee3', end
   padding: 60px 67px 40px;
 }
 .user-history img{
-  width: 61px;
-  height: 61px;
   border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   width: 61px;
   height: 61px;
   border-radius: 50%;
@@ -1780,6 +1782,10 @@ label.cos-checkbox{
   .xs-table-responsive{min-height: .01%; overflow-x: auto;}
   .col-sm-12.col-md-12.pd0{padding: 0px 15px;}
   #book-history-wrap{padding: 40px 0px 30px;}
+  .user-history h5{font-size: 18px; text-align: left; margin: 10px 0px; text-align: center;}
+  .table-head{padding: 10px 0px;}
+  .user-history img{width: 50px; height: 50px; position: static;}
+  .user-history span{font-size: 18px; float: right; line-height: 47px; text-transform: uppercase;}
 
 }
 @media (min-width:768px) and (max-width: 968px) {
