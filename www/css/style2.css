@@ -1846,7 +1846,7 @@ label.cos-checkbox{
   .sectin-title{font-size: 20px;}
   .serch-wrap{position: relative;}
   .serch-wrap .form-control{height: 30px;}
-  .serch-wrap .serch-btn{position: absolute; top: 1px; right: 16px; height: 30px; width: 33px;}
+  .serch-wrap .serch-btn{position: absolute; top: 1px; right: 16px; height: 29  px; width: 33px;}
   .film-title h6{font-size: 16px; line-height: 20px; margin-bottom: 0px;}
   .social-wrap ul li{width: 30px; height: 30px; font-size: 15px; line-height: 31px; margin-right: 6px;}
   .box-book-btn a{padding: 7px; font-size: 15px;}
@@ -1857,6 +1857,7 @@ label.cos-checkbox{
   .footer-info{margin-bottom: 20px;}
   #footer-wrap .mr-b10{margin-bottom: 0px;}
   .footer-info.pd-l30{padding-left: 0px;}
+  .file-date p{padding: 3px 16px; font-size: 13px;}
   .foot-title{font-size: 17px;}
   #foot-strip p{font-size: 13px;}
   #film-static-banner{padding: 50px 0px 0px;}
