@@ -1899,7 +1899,6 @@ label.cos-checkbox{
   label.cos-checkbox{line-height: 14px;}
   .history-table .horizantal-tabs .tab-pane{padding: 20px 0px 0px;}
   .form-filds.pd50{padding: 20px 15px;}
-  .gallery-photos{margin-top: 15px;}
   #tickets-book-wrap{padding-bottom: 0px;}
   #past-gallery{padding: 0px 0px 20px;}
   .sign-form-body .form-icon{padding: 20px 20px 30px;}
@@ -1913,6 +1912,7 @@ label.cos-checkbox{
   #pyement-wrap, #platinum, #gold, #silver{padding-bottom: 20px;}
   .sm-full-width{width: 100%;}
   .pyement-form .form-control{width: 100%;}
+  .reviews-list{margin-top: 20px;}
 }
 @media (max-width: 991px) {
     .navbar-header {
