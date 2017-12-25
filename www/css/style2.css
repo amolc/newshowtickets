@@ -1791,6 +1791,13 @@ label.cos-checkbox{
   div.dataTables_filter, 
   div.dataTables_info, 
   div.dataTables_paginate{text-align: right;}
+  .sign-in-block{width: 100%;}
+  .form-filds.pd30{padding: 20px 0px;}
+  .form-group.mr-b30{margin-bottom: 20px;}
+  .pr7{padding-right: 15px;}
+  .pl7{padding-left: 15px;}
+  label.cos-checkbox{line-height: 14px;}
+  .history-table .horizantal-tabs .tab-pane{padding: 20px 0px 0px;}
 
 }
 @media (min-width:768px) and (max-width: 968px) {
