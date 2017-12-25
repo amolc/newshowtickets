@@ -1912,6 +1912,7 @@ label.cos-checkbox{
   .modal-footer{padding: 10px 0px;}
   #pyement-wrap, #platinum, #gold, #silver{padding-bottom: 20px;}
   .sm-full-width{width: 100%;}
+  .pyement-form .form-control{width: 100%;}
 }
 @media (max-width: 991px) {
     .navbar-header {
