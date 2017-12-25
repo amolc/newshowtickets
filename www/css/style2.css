@@ -1809,6 +1809,9 @@ label.cos-checkbox{
   .sign-in-block .text-center.mr-t40{margin-top: 10px;}
   .sign-form-header h5{font-size: 18px;}
   .sign-form-body .form-icon p{font-size: 16px;}
+  .step-box{padding: 26px 15px;}
+  .select-step-boxes .pr7{padding-right: 7px !important;}
+  .select-step-boxes .pl7{padding-left: 7px !important;}
 
 }
 @media (min-width:768px) and (max-width: 968px) {
