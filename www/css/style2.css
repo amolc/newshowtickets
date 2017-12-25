@@ -1737,8 +1737,8 @@ label.cos-checkbox{
   #header-wrap .navbar-default .navbar-nav li a{border-right: 0px; font-size: 15px;}
   #banner-wrap{padding: 50px 0px 0px;}
   .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .icon-next{font-size: 12px;}
-  #upcoming-events-wrap .sectin-title{font-size: 18px; margin-top: 6px; }
-  .sectin-title{font-size: 18px;}
+  #upcoming-events-wrap .sectin-title{margin-top: 6px; }
+  .sectin-title{font-size: 20px;}
   .serch-wrap{position: relative;}
   .serch-wrap .form-control{height: 30px;}
   .serch-wrap .serch-btn{position: absolute; top: 1px; right: 16px; height: 30px; width: 33px;}
