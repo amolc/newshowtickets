@@ -1715,6 +1715,7 @@ label.cos-checkbox{
 @media (max-width: 767px) {
   section {padding: 20px 0px 20px;}
   .logo-img img{width: 128px;} 
+  .xs-center{text-align: center;}
   #header-wrap .col-sm-8.pd-l30{padding-left: 0px;}
   .xs-navbar{position: absolute; right: 0px; top: 0px; width: 100%; background: #32a9b8;}
   #header-wrap .navbar-toggle{margin-top: 12px; padding: 6px 6px; background: #fff; border-color: #ffffff;}
@@ -1766,7 +1767,14 @@ label.cos-checkbox{
   .screen-bg.pd40{padding: 20px;}
   #reviews-wrap{padding: 0px 0px 30px;}
   .comment-box-wrap.mr-t50{margin-top: 20px; text-align: center;}
-
+  .pyement-form .form-group{margin-bottom: 15px;}
+  .form-inline .form-group{display: block;}
+  .panel-body {padding: 15px 15px 0;}
+  .debit-info{width: 100%;}
+  .date-width{float: left;}
+  .debit-info .form-group{margin-bottom: 0px;}
+  .horizantal-tabs .tab-pane{padding: 20px 0px;}
+  .tecket-midddle table tr td select{width: 60px;}
 
 }
 @media (min-width:768px) and (max-width: 968px) {

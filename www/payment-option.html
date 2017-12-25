@@ -29,17 +29,17 @@
     <![endif]-->
   </head>
   <body>
-   <header id="header-wrap" class="bg-dark-gray">
+    <header id="header-wrap" class="bg-dark-gray">
       <div class="container">
         <div class="row">
-          <div class="col-sm-2">
+          <div class="col-sm-2 col-xs-6">
             <div class="logo-img">
               <a href="index.html">
                 <img src="images/logo-white.png" alt="showtickets" title="Showtickets" class="img-responsive">
               </a>
             </div>
           </div>
-          <div class="col-sm-8 pd-l30">
+          <div class="col-sm-8 pd-l30 xs-navbar">
             <div class="nav-wrap">
               <nav class="navbar navbar-default">
                   <div class="container-fluid pd0">
@@ -70,9 +70,9 @@
                 </nav>
             </div>
           </div>
-          <div class="col-sm-2">
+          <div class="col-sm-2 col-xs-12">
             <div class="cuntry-select">
-              <div class="col-sm-5 pd0">
+              <div class="col-sm-5 col-xs-5 pd0">
                 <div class="dropdown">
                   <!-- <button class="btn btn-default dropdown-toggle user-drop" type="button" data-toggle="modal" data-target="#signin-modal"> -->
                   <button class="btn btn-default dropdown-toggle user-drop" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -87,7 +87,7 @@
                     </ul>
                 </div>
               </div>
-              <div class="col-sm-4 pd0">
+              <div class="col-sm-4 col-xs-4 pd0">
                 <div class="dropdown">
                   <button class="btn btn-default dropdown-toggle pd-r0" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                     <img src="images/ind-flag.png" alt="" title="">
@@ -165,7 +165,9 @@
                                     <div class="form-group">
                                        <input type="text" class="form-control" id="phone-nos" placeholder="+65">
                                     </div>
-                                    <button type="submit" class="btn blue-btn">CONTINUE</button>
+                                    <div class="text-center form-group">
+                                      <button type="submit" class="btn blue-btn">CONTINUE</button>
+                                    </div>
                                   </form>
                                 </div>
                             </div>
@@ -187,8 +189,10 @@
                                     <div class="form-group">
                                        <input type="text" class="form-control" id="promo-code" placeholder="Enter Your Promo Code">
                                     </div>
-                                    <button type="submit" class="btn blue-btn">BOOK NOW</button>
-                                  </form>
+                                    <div class="form-group xs-center">
+                                      <button type="submit" class="btn blue-btn">BOOK NOW</button>
+                                    </div>
+                                  </form> 
                                 </div>
                               </div>
 
@@ -240,6 +244,7 @@
                                                       </div>
                                                   </div>
                                                </div>
+                                               <div class="clearfix"></div>
                                           </div>
                                           <div class="text-center mr-t20">
                                             <button type="submit" class="btn blue-btn">MAKE PAYMENT</button>
@@ -274,46 +279,48 @@
                         <div class="tickets-divider"></div>
                         <div class="tecket-midddle">
                           <h5>Adult / Child</h5>
-                          <table class="table"> 
-                            <thead> 
-                              <tr> 
-                                <th>Class</th>
-                                <th>Seat</th> 
-                                <th>A/C</th> 
-                                <th>AMT</th> 
-                                <th>Discount</th>
-                                <th>Dis AMT</th>
-                              </tr> 
-                            </thead> 
-                            <tbody> 
-                              <tr> 
-                                <th scope="row">Platinum</th> 
-                                <td>A-2</td> 
-                                <td>
-                                  <select class="form-control">
-                                    <option>A</option>
-                                    <option>C</option>
-                                  </select>
-                                </td> 
-                                <td>100</td> 
-                                <td class="text-center">20%</td> 
-                                <td class="text-center">SGD 20</td> 
-                              </tr> 
-                               <tr> 
-                                <th scope="row">Platinum</th> 
-                                <td>A-2</td> 
-                                <td>
-                                  <select class="form-control">
-                                    <option>A</option>
-                                    <option>C</option>
-                                  </select>
-                                </td>
-                                <td>100</td> 
-                                <td class="text-center">20%</td> 
-                                <td class="text-center">SGD 20</td> 
-                              </tr> 
-                            </tbody> 
-                          </table>
+                          <div class="table-responsive">
+                            <table class="table"> 
+                              <thead> 
+                                <tr> 
+                                  <th>Class</th>
+                                  <th>Seat</th> 
+                                  <th>A/C</th> 
+                                  <th>AMT</th> 
+                                  <th>Discount</th>
+                                  <th>Dis AMT</th>
+                                </tr> 
+                              </thead> 
+                              <tbody> 
+                                <tr> 
+                                  <th scope="row">Platinum</th> 
+                                  <td>A-2</td> 
+                                  <td>
+                                    <select class="form-control">
+                                      <option>A</option>
+                                      <option>C</option>
+                                    </select>
+                                  </td> 
+                                  <td>100</td> 
+                                  <td class="text-center">20%</td> 
+                                  <td class="text-center">SGD 20</td> 
+                                </tr> 
+                                 <tr> 
+                                  <th scope="row">Platinum</th> 
+                                  <td>A-2</td> 
+                                  <td>
+                                    <select class="form-control">
+                                      <option>A</option>
+                                      <option>C</option>
+                                    </select>
+                                  </td>
+                                  <td>100</td> 
+                                  <td class="text-center">20%</td> 
+                                  <td class="text-center">SGD 20</td> 
+                                </tr> 
+                              </tbody> 
+                            </table>
+                          </div>
                         </div>
                         <div class="tickets-divider"></div>
                         <div class="tecket-foot">
