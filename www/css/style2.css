@@ -1715,7 +1715,7 @@ label.cos-checkbox{
 
 /*Responsive Css Start */
 @media (max-width: 767px) {
-  section {padding: 20px 0px 20px;}
+  section {padding: 20px 0px 0px;}
   .logo-img img{width: 128px;} 
   .xs-center{text-align: center;}
   #header-wrap .col-sm-8.pd-l30{padding-left: 0px;}
@@ -1750,6 +1750,7 @@ label.cos-checkbox{
   .box-book-btn a{padding: 7px; font-size: 15px;}
   .film-promo-box{margin-bottom: 15px;}
   #featured-events-wrap .col-sm-12.mr-b30{margin-bottom: 15px;}
+  #featured-events-wrap{padding-bottom: 10px !important;}
   #footer-wrap{padding: 30px 0px;}
   .footer-info{margin-bottom: 20px;}
   #footer-wrap .mr-b10{margin-bottom: 0px;}
