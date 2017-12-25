@@ -1776,6 +1776,7 @@ label.cos-checkbox{
   .horizantal-tabs .tab-pane{padding: 20px 0px;}
   .tecket-midddle table tr td select{width: 60px;}
   #pyement-wrap{padding-top: 20px;}
+  .btn{font-size: 13px;}
 
 }
 @media (min-width:768px) and (max-width: 968px) {
