@@ -994,6 +994,15 @@ a, a:hover, a:active, a:focus{
   border-radius: 2px;
   cursor: pointer;
 }
+.seat-emty{
+  visibility: hidden;
+  margin: 5px 4px;
+  background: #c5c5c5;
+  width: 27px;
+  height: 27px;
+  border-radius: 2px;
+  cursor: pointer;
+}
 
 .seat-select {
     display: none;
