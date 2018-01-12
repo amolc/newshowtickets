@@ -1243,7 +1243,8 @@ a, a:hover, a:active, a:focus{
   font-size: 18px;
   display: inline-block;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 30px;
+  text-transform: uppercase;
 }
 .screen-wrap h5
 #screen-wrap{
