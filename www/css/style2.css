@@ -989,8 +989,8 @@ a, a:hover, a:active, a:focus{
   display: block;*/
   margin: 5px 4px;
   background: #c5c5c5;
-  width: 27px;
-  height: 27px;
+  width: 22px;
+  height: 22px;
   border-radius: 2px;
   cursor: pointer;
 }
@@ -998,8 +998,8 @@ a, a:hover, a:active, a:focus{
   visibility: hidden;
   margin: 5px 4px;
   background: #c5c5c5;
-  width: 27px;
-  height: 27px;
+  width: 22px;
+  height: 22px;
   border-radius: 2px;
   cursor: pointer;
 }
@@ -1206,12 +1206,19 @@ a, a:hover, a:active, a:focus{
 }
 .sheet-list ul li{
   list-style-type: none;
-  padding: 10px;
+  padding: 0;
+  width: 29px;
+}
+.sheet-list ul{
+  display: table;
+  width: 100%;
 }
 .sheet-list ul li#seats{
   position: relative;
   padding: 3px 0px;
-  width: 500px;
+}
+.sheet-list ul li{
+  display: table-cell;
 }
 .sheet-list ul li#seats .left-no,
 .sheet-list ul li#seats .right-no{
@@ -1234,11 +1241,15 @@ a, a:hover, a:active, a:focus{
   margin: 0px 0px 15px;
   color: #ffffff;
   font-size: 18px;
-  width: 484px;
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
 }
+.screen-wrap h5
 #screen-wrap{
   padding: 0px;
 }
+ 
 .display-screen{
   /*background-color: #232e3a;*/
 }
@@ -1511,8 +1522,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dadee3', end
   text-align: center;
 }
 .screen-center{
-  width: 500px;
+  /*width: 500px;*/
   margin: 0 auto;
+  position: relative;
+}
+.table-responsive{
+  border: 0px;
 }
 .screen-bg{
   background-color: #f0f0f0;
@@ -1523,7 +1538,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dadee3', end
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
 }
-
+.left-row span{
+  position: absolute;
+  left: 0;
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.right-row span{
+  position: absolute;
+  right: 0;
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.sheet-list{
+  min-height: .01%;
+  overflow-x: auto;
+}
 .collapse.in, .collapse-tab{
   display: block !important;
 }
@@ -1959,4 +1991,25 @@ label.cos-checkbox{
 }
 @media (min-width: 1200px) {
 
+}
+.left-row span:nth-child(1), .right-row span:nth-child(1){
+  top: 8px;
+}
+.left-row span:nth-child(2), .right-row span:nth-child(2){
+  top: 50px;
+}
+.left-row span:nth-child(3), .right-row span:nth-child(3){
+  top: 95px;
+}
+.left-row span:nth-child(4), .right-row span:nth-child(4){
+  top: 137px;
+}
+.left-row span:nth-child(5), .right-row span:nth-child(5){
+  top: 180px;
+}
+.left-row span:nth-child(6), .right-row span:nth-child(6){
+  top: 223px;
+}
+.left-row span:nth-child(7), .right-row span:nth-child(7){
+  top: 264px;
 }
